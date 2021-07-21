@@ -1,7 +1,7 @@
 {
   "name": "sedona-22",
   "private": true,
-  "description": "Личный проект «Седона» от HTML Academy",
+  "description": "Проект «Питомник Мейн-Кунов»",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "stylelint": "13.12.0",
