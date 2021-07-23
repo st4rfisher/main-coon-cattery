@@ -1,0 +1,8 @@
+.header__city {
+  @include paragraph;
+}
+
+.header__title {
+  @include title;
+}
+

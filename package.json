@@ -1,7 +1,7 @@
 {
   "name": "main-coon-cattery",
   "private": true,
-  "description": "Проект «Питомник Мейн-Кунов»",
+  "description": "Проект Питомник Мейн-Кунов",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.2.5",
