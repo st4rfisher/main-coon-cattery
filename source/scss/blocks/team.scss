@@ -1,0 +1,35 @@
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $black;
+}
+
+.team__title {
+  @include section-title-mobile;
+}
+
+.team__description {
+  @include paragraph-mobile;
+  color: $gold;
+}
+
+.team-gallery__name {
+  @include text;
+  color: $gold;
+}
+
+.team-gallery__position {
+  @include section-paragraph-mobile;
+  color: $gold;
+}
+
+.team-gallery__description {
+  @include section-paragraph-mobile;
+  color: $white;
+}
+
+.team-gallery__social-list {
+  list-style: none;
+
+}

@@ -1,0 +1,21 @@
+.features {
+  background-color: $asphalt;
+}
+
+.features__title {
+  @include section-title-mobile;
+}
+
+.features__description {
+  @include paragraph-mobile;
+  color: $gold;
+}
+
+.features__list {
+  list-style: none;
+  color: $white;
+}
+
+.features__item{
+  @include paragraph-mobile;
+}

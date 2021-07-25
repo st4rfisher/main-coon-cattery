@@ -1,0 +1,114 @@
+@mixin title-mobile {
+  font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  word-break: break-word;
+}
+
+@mixin title {
+  font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 60px;
+  word-break: break-word;
+}
+
+@mixin paragraph-mobile {
+  font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+  font-style: 200;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  word-break: break-word;
+}
+
+@mixin paragraph {
+  font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+  font-style: 400;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  word-break: break-word;
+}
+
+@mixin link-text-mobile {
+  font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+  font-style: 700;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  word-break: break-word;
+}
+
+@mixin link-text {
+  font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+  font-style: 700;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  word-break: break-word;
+}
+
+@mixin section-title-mobile {
+  font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
+  font-style: 400;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 32px;
+  word-break: break-word;
+  color: $white;
+}
+
+@mixin section-title  {
+  font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+  font-style: 400;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  word-break: break-word;
+  color: $white;
+}
+
+@mixin section-paragraph-mobile {
+  font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+  font-style: 300;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  word-break: break-word;
+}
+
+@mixin section-paragraph {
+  font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+  font-style: 300;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  word-break: break-word;
+}
+
+@mixin button-text {
+  font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+  font-style: 500;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  word-break: break-word;
+}
+
+@mixin text {
+  font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+  font-style: 700;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  word-break: break-word;
+}
+
+@mixin button {
+
+}
+

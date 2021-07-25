@@ -1,0 +1,24 @@
+.pet-care {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $black;
+}
+
+.pet-care__title {
+  @include section-title-mobile;
+}
+
+.pet-care__list {
+  list-style: none;
+}
+
+.pet-care__item-title {
+  @include text;
+  color: $gold;
+}
+
+.pet-care__description {
+  @include paragraph-mobile;
+  color: $white;
+}

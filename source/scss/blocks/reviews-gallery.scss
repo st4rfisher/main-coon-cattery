@@ -1,0 +1,20 @@
+.reviews-gallery__name {
+  @include text;
+  color: $white;
+}
+
+.reviews-gallery__review {
+  @include paragraph-mobile;
+  color: $white;
+}
+
+.reviews-gallery__date {
+  @include paragraph;
+  font-size: 12px;
+  line-height: 17px;
+  color: $gold;
+}
+
+.reviews-gallery__social-list {
+  list-style: none;
+}

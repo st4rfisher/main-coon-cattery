@@ -1,0 +1,29 @@
+.questions-answers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $asphalt;
+}
+
+.questions-answers__title {
+  @include section-title-mobile;
+}
+
+.questions-answers__description {
+  @include section-paragraph-mobile;
+  color: $gold;
+}
+
+.questions-answers__list {
+  list-style: none;
+  color: $white;
+}
+
+.questions-answers__question {
+  @include section-paragraph-mobile;
+  font-style: 500;
+}
+
+.questions-answers__answer {
+  @include section-paragraph-mobile;
+}

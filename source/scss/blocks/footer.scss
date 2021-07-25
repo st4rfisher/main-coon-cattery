@@ -1,0 +1,19 @@
+.footer {
+  background-color: $black;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__address {
+  @include paragraph-mobile;
+  color: $white;
+}
+
+.footer__phone {
+  @include paragraph-mobile;
+  color: $white;
+}

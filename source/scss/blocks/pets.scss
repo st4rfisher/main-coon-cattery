@@ -1,0 +1,30 @@
+.pets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $asphalt;
+}
+
+.pets__title {
+  @include section-title-mobile;
+}
+
+.pets__description {
+  @include paragraph-mobile;
+  color: $gold;
+  font-weight: 200;
+}
+
+.pets-gallery__list {
+  @include button-text;
+  color: $white;
+  list-style: none;
+}
+
+.pets-gallery__photos {
+  list-style: none;
+}
+
+.pets-gallery__link {
+  @include link-text-mobile;
+}

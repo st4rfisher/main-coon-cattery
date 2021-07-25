@@ -1,0 +1,24 @@
+.services {
+  background-color: $black;
+}
+
+.services__sub-title {
+  @include section-title-mobile;
+}
+
+.services__description {
+  @include section-paragraph-mobile;
+  color: $gold;
+}
+
+.services__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  color: $white;
+}
+
+.services__item-description {
+  @include section-paragraph-mobile;
+}
