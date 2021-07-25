@@ -361,6 +361,9 @@ template {
   background-color: #181617; }
 
 .header__container {
+  padding: 27px 0 0 0; }
+
+.header__content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -373,7 +376,9 @@ template {
   font-size: 14px;
   line-height: 20px;
   word-break: break-word;
-  color: #A07B50; }
+  color: #A07B50;
+  margin: 0;
+  text-align: center; }
 
 .header__title {
   font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
@@ -382,7 +387,8 @@ template {
   font-size: 36px;
   line-height: 42px;
   word-break: break-word;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  text-align: center; }
 
 .header__description {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
@@ -392,7 +398,9 @@ template {
   line-height: 20px;
   word-break: break-word;
   font-weight: 200;
-  color: #A07B50; }
+  color: #A07B50;
+  text-align: center;
+  margin: 0 45px 40px 45px; }
 
 .header__link {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
@@ -401,7 +409,11 @@ template {
   font-size: 12px;
   line-height: 14px;
   word-break: break-word;
-  color: #FFFFFF; }
+  padding: 15px 18px 16px 18px;
+  border: 1px solid #A07B50;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin: 0 auto; }
 
 .page {
   min-width: 320px; }

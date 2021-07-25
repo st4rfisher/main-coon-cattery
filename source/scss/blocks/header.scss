@@ -3,6 +3,10 @@
 }
 
 .header__container {
+  padding: 27px 0 0 0;
+}
+
+.header__content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,25 +16,27 @@
 .header__city {
   @include paragraph-mobile;
   color: $gold;
-  // margin: 0;
+  margin: 0;
+  text-align: center;
 }
 
 .header__title {
   @include title-mobile;
   color: $white;
-  // text-align: center;
+  text-align: center;
 }
 
 .header__description {
   @include paragraph-mobile;
   font-weight: 200;
   color: $gold;
-  // text-align: center;
-  // margin: 0 45px 40px 45px;
+  text-align: center;
+  margin: 0 45px 40px 45px;
 }
 
 .header__link {
-  @include link-text-mobile;
+  @include button-link;
   color: $white;
-  // text-decoration: none;
+  text-decoration: none;
+  margin: 0 auto;
 }
