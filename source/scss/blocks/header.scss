@@ -3,20 +3,22 @@
 }
 
 .header__container {
-  padding: 27px 0 0 0;
+  padding: 27px 15px 276px 15px;
+  background-image: url("../img/cat.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
 }
 
 .header__content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  outline: 3px solid greenyellow;
 }
 
 .header__city {
   @include paragraph-mobile;
   color: $gold;
-  margin: 0;
+  margin: 45px 0 0 0;
   text-align: center;
 }
 
@@ -24,6 +26,7 @@
   @include title-mobile;
   color: $white;
   text-align: center;
+  margin: 4px 0 0 0;
 }
 
 .header__description {
@@ -31,7 +34,7 @@
   font-weight: 200;
   color: $gold;
   text-align: center;
-  margin: 0 45px 40px 45px;
+  margin: 17px 20px 35px 20px;
 }
 
 .header__link {
