@@ -418,14 +418,17 @@ template {
   text-decoration: none;
   margin: 0 auto; }
 
+.main__container {
+  padding: 40px 15px 0 15px;
+  background-color: #1F1C1D; }
+
 .page {
   min-width: 320px; }
 
 .pets {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: #1F1C1D; }
+  align-items: center; }
 
 .pets__title {
   font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
@@ -434,7 +437,8 @@ template {
   font-size: 28px;
   line-height: 32px;
   word-break: break-word;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  margin: 13px 0 10px 0; }
 
 .pets__description {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
@@ -444,7 +448,8 @@ template {
   line-height: 20px;
   word-break: break-word;
   color: #A07B50;
-  font-weight: 200; }
+  font-weight: 200;
+  text-align: center; }
 
 .pets-gallery__list {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
@@ -453,8 +458,12 @@ template {
   font-size: 16px;
   line-height: 19px;
   word-break: break-word;
+  display: flex;
+  justify-content: space-between;
   color: #FFFFFF;
-  list-style: none; }
+  list-style: none;
+  margin: 0;
+  padding: 14px 27px; }
 
 .pets-gallery__photos {
   list-style: none; }
@@ -571,6 +580,21 @@ template {
   line-height: 20px;
   word-break: break-word;
   color: #FFFFFF; }
+
+.pets-gallery {
+  width: 100%; }
+
+.pets-gallery__item {
+  opacity: 0.2; }
+  .pets-gallery__item--active {
+    opacity: 1; }
+
+.pets-gallery__block {
+  display: none; }
+
+.pets-gallery__show {
+  display: block;
+  list-style: none; }
 
 .team {
   display: flex;

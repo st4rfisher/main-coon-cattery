@@ -1,0 +1,20 @@
+.pets-gallery {
+  width: 100%;
+}
+
+.pets-gallery__item {
+  opacity: 0.2;
+  &--active {
+    opacity: 1;
+  }
+}
+
+.pets-gallery__block {
+  display: none;
+}
+
+.pets-gallery__show {
+  display: block;
+  list-style: none;
+}
+
