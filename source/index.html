@@ -34,22 +34,36 @@
               <li class="pets-gallery__item">Кошки</li>
               <li class="pets-gallery__item">Котята</li>
             </ul>
-            <div class="pets-gallery__photos">
-              <ul class="pets-gallery__block pets-gallery__show">
-                <li class="pets-gallery__photo"><img src="img/cat-2.jpg" alt=""></li>
-                <li class="pets-gallery__photo"><img src="img/cat-3.jpg" alt=""></li>
-                <li class="pets-gallery__photo"><img src="img/cat-4.jpg" alt=""></li>
-              </ul>
-              <ul class="pets-gallery__block">
-                <li class="pets-gallery__photo"></li>
-                <li class="pets-gallery__photo"></li>
-                <li class="pets-gallery__photo"></li>
-              </ul>
-              <ul class="pets-gallery__block">
-                <li class="pets-gallery__photo"></li>
-                <li class="pets-gallery__photo"></li>
-                <li class="pets-gallery__photo"></li>
-              </ul>
+            <div class="pets-gallery__photos-wrapper">
+              <div class="pets-gallery__photos">
+                <ul class="pets-gallery__block pets-gallery__show">
+                  <li class="pets-gallery__photo visually-hidden"><img src="img/cat-2.jpg" alt=""></li>
+                  <li class="pets-gallery__photo visually-hidden"><img src="img/cat-3.jpg" alt=""></li>
+                  <li class="pets-gallery__photo "><img src="img/cat-4.jpg" alt=""></li>
+                </ul>
+                <ul class="pets-gallery__block">
+                  <li class="pets-gallery__photo"></li>
+                  <li class="pets-gallery__photo"></li>
+                  <li class="pets-gallery__photo"></li>
+                </ul>
+                <ul class="pets-gallery__block">
+                  <li class="pets-gallery__photo"></li>
+                  <li class="pets-gallery__photo"></li>
+                  <li class="pets-gallery__photo"></li>
+                </ul>
+              </div>
+              <div class="pets-gallery__sliders">
+                <button class="pets-gallery__slider pets-gallery__slider--left">
+                  <svg class="pets-gallery__arrow" width="8" height="18">
+                    <use xlink:href="img/icons/sprite.svg#arrow-left-icon"></use>
+                  </svg>
+                </button>
+                <button class="pets-gallery__slider pets-gallery__slider--right">
+                  <svg class="pets-gallery__arrow" width="8" height="18">
+                    <use xlink:href="img/icons/sprite.svg#arrow-right-icon"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
           <a class="pets-gallery__link" href="">Смотреть больше</a>

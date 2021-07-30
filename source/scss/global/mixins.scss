@@ -110,7 +110,17 @@
 
 @mixin button-link {
   @include link-text-mobile;
-  padding: 11px 17px 13px 17px;
+  padding: 11px 20px 13px 20px;
   border: 1px solid $gold;
+  color: $white;
+  text-decoration: none;
+}
+
+@mixin for-slider {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+
 }
 

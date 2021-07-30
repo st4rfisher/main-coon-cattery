@@ -4,7 +4,7 @@
 
 .header__container {
   padding: 27px 15px 276px 15px;
-  background-image: url("../img/cat.png");
+  background-image: url("../img/cat-1.png");
   background-repeat: no-repeat;
   background-position: 100% 100%;
 }
@@ -39,7 +39,5 @@
 
 .header__link {
   @include button-link;
-  color: $white;
-  text-decoration: none;
   margin: 0 auto;
 }

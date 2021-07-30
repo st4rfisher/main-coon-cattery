@@ -11,10 +11,48 @@
 
 .pets-gallery__block {
   display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .pets-gallery__show {
   display: block;
-  list-style: none;
 }
 
+.pets-gallery__photos-wrapper {
+  position: relative;
+  margin: 23px 0 41px;
+  padding: 0px 28px;
+}
+
+.pets-gallery__photos {
+
+}
+
+.pets-gallery__photo {
+  min-width: 234px;
+}
+
+.pets-gallery__photo img {
+  width: 100%;
+}
+
+.pets-gallery__link {
+  @include button-link;
+}
+
+.pets-gallery__sliders {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.pets-gallery__slider {
+  @include for-slider;
+
+}
