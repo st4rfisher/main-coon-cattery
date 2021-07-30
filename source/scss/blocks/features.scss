@@ -1,5 +1,9 @@
 .features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: $asphalt;
+  padding: 30px 0 0 0;
 }
 
 .features__title {
@@ -9,13 +13,29 @@
 .features__description {
   @include paragraph-mobile;
   color: $gold;
+  text-align: center;
+  margin: 0 8px 25px 8px;
 }
 
 .features__list {
   list-style: none;
   color: $white;
+  padding: 0 16px 0 18px;
+  margin: 15px 0 0 0;
 }
 
-.features__item{
+.features__item {
+  position: relative;
   @include paragraph-mobile;
+  margin: 20px 0 0 0;
+  &:before {
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: -18px;
+    width: 8px;
+    height: 8px;
+    background-color: $gold;
+    border-radius: 50%;
+  }
 }

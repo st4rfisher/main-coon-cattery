@@ -373,8 +373,8 @@ template {
 
 .header__city {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
-  font-style: 200;
-  font-weight: normal;
+  font-style: normal;
+  font-weight: 200;
   font-size: 14px;
   line-height: 20px;
   word-break: break-word;
@@ -395,19 +395,18 @@ template {
 
 .header__description {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
-  font-style: 200;
-  font-weight: normal;
+  font-style: normal;
+  font-weight: 200;
   font-size: 14px;
   line-height: 20px;
   word-break: break-word;
-  font-weight: 200;
   color: #A07B50;
   text-align: center;
   margin: 17px 20px 35px 20px; }
 
 .header__link {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
-  font-style: 700;
+  font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 14px;
@@ -432,28 +431,28 @@ template {
 
 .pets__title {
   font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
-  font-style: 400;
+  font-style: normal;
   font-weight: normal;
   font-size: 28px;
   line-height: 32px;
   word-break: break-word;
   color: #FFFFFF;
+  text-align: center;
   margin: 13px 0 10px 0; }
 
 .pets__description {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
-  font-style: 200;
-  font-weight: normal;
+  font-style: normal;
+  font-weight: 200;
   font-size: 14px;
   line-height: 20px;
   word-break: break-word;
   color: #A07B50;
-  font-weight: 200;
   text-align: center; }
 
 .pets-gallery__list {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
-  font-style: 500;
+  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
@@ -470,61 +469,82 @@ template {
 
 .pets-gallery__link {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
-  font-style: 700;
+  font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 14px;
   word-break: break-word; }
 
 .features {
-  background-color: #1F1C1D; }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1F1C1D;
+  padding: 30px 0 0 0; }
 
 .features__title {
   font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
-  font-style: 400;
+  font-style: normal;
   font-weight: normal;
   font-size: 28px;
   line-height: 32px;
   word-break: break-word;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  text-align: center; }
 
 .features__description {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
-  font-style: 200;
-  font-weight: normal;
+  font-style: normal;
+  font-weight: 200;
   font-size: 14px;
   line-height: 20px;
   word-break: break-word;
-  color: #A07B50; }
+  color: #A07B50;
+  text-align: center;
+  margin: 0 8px 25px 8px; }
 
 .features__list {
   list-style: none;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  padding: 0 16px 0 18px;
+  margin: 15px 0 0 0; }
 
 .features__item {
+  position: relative;
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
-  font-style: 200;
-  font-weight: normal;
+  font-style: normal;
+  font-weight: 200;
   font-size: 14px;
   line-height: 20px;
-  word-break: break-word; }
+  word-break: break-word;
+  margin: 20px 0 0 0; }
+  .features__item:before {
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: -18px;
+    width: 8px;
+    height: 8px;
+    background-color: #A07B50;
+    border-radius: 50%; }
 
 .services {
   background-color: #181617; }
 
 .services__sub-title {
   font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
-  font-style: 400;
+  font-style: normal;
   font-weight: normal;
   font-size: 28px;
   line-height: 32px;
   word-break: break-word;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  text-align: center; }
 
 .services__description {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
-  font-style: 300;
-  font-weight: normal;
+  font-style: normal;
+  font-weight: 200;
   font-size: 14px;
   line-height: 20px;
   word-break: break-word;
@@ -539,8 +559,8 @@ template {
 
 .services__item-description {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
-  font-style: 300;
-  font-weight: normal;
+  font-style: normal;
+  font-weight: 200;
   font-size: 14px;
   line-height: 20px;
   word-break: break-word; }
@@ -553,19 +573,20 @@ template {
 
 .pet-care__title {
   font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
-  font-style: 400;
+  font-style: normal;
   font-weight: normal;
   font-size: 28px;
   line-height: 32px;
   word-break: break-word;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  text-align: center; }
 
 .pet-care__list {
   list-style: none; }
 
 .pet-care__item-title {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
-  font-style: 700;
+  font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 21px;
@@ -574,8 +595,8 @@ template {
 
 .pet-care__description {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
-  font-style: 200;
-  font-weight: normal;
+  font-style: normal;
+  font-weight: 200;
   font-size: 14px;
   line-height: 20px;
   word-break: break-word;
@@ -611,7 +632,7 @@ template {
 
 .pets-gallery__link {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
-  font-style: 700;
+  font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 14px;
@@ -644,17 +665,18 @@ template {
 
 .team__title {
   font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
-  font-style: 400;
+  font-style: normal;
   font-weight: normal;
   font-size: 28px;
   line-height: 32px;
   word-break: break-word;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  text-align: center; }
 
 .team__description {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
-  font-style: 200;
-  font-weight: normal;
+  font-style: normal;
+  font-weight: 200;
   font-size: 14px;
   line-height: 20px;
   word-break: break-word;
@@ -662,7 +684,7 @@ template {
 
 .team-gallery__name {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
-  font-style: 700;
+  font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 21px;
@@ -671,8 +693,8 @@ template {
 
 .team-gallery__position {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
-  font-style: 300;
-  font-weight: normal;
+  font-style: normal;
+  font-weight: 200;
   font-size: 14px;
   line-height: 20px;
   word-break: break-word;
@@ -680,8 +702,8 @@ template {
 
 .team-gallery__description {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
-  font-style: 300;
-  font-weight: normal;
+  font-style: normal;
+  font-weight: 200;
   font-size: 14px;
   line-height: 20px;
   word-break: break-word;
@@ -698,17 +720,18 @@ template {
 
 .questions-answers__title {
   font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
-  font-style: 400;
+  font-style: normal;
   font-weight: normal;
   font-size: 28px;
   line-height: 32px;
   word-break: break-word;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  text-align: center; }
 
 .questions-answers__description {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
-  font-style: 300;
-  font-weight: normal;
+  font-style: normal;
+  font-weight: 200;
   font-size: 14px;
   line-height: 20px;
   word-break: break-word;
@@ -720,8 +743,8 @@ template {
 
 .questions-answers__question {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
-  font-style: 300;
-  font-weight: normal;
+  font-style: normal;
+  font-weight: 200;
   font-size: 14px;
   line-height: 20px;
   word-break: break-word;
@@ -729,8 +752,8 @@ template {
 
 .questions-answers__answer {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
-  font-style: 300;
-  font-weight: normal;
+  font-style: normal;
+  font-weight: 200;
   font-size: 14px;
   line-height: 20px;
   word-break: break-word; }
@@ -743,16 +766,17 @@ template {
 
 .reviews__title {
   font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
-  font-style: 400;
+  font-style: normal;
   font-weight: normal;
   font-size: 28px;
   line-height: 32px;
   word-break: break-word;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  text-align: center; }
 
 .reviews-gallery__name {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
-  font-style: 700;
+  font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 21px;
@@ -761,8 +785,8 @@ template {
 
 .reviews-gallery__review {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
-  font-style: 200;
-  font-weight: normal;
+  font-style: normal;
+  font-weight: 200;
   font-size: 14px;
   line-height: 20px;
   word-break: break-word;
@@ -770,7 +794,7 @@ template {
 
 .reviews-gallery__date {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
-  font-style: 400;
+  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
@@ -792,8 +816,8 @@ template {
 
 .footer__address {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
-  font-style: 200;
-  font-weight: normal;
+  font-style: normal;
+  font-weight: 200;
   font-size: 14px;
   line-height: 20px;
   word-break: break-word;
@@ -801,8 +825,8 @@ template {
 
 .footer__phone {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
-  font-style: 200;
-  font-weight: normal;
+  font-style: normal;
+  font-weight: 200;
   font-size: 14px;
   line-height: 20px;
   word-break: break-word;

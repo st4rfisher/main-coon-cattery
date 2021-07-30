@@ -31,7 +31,6 @@
 
 .header__description {
   @include paragraph-mobile;
-  font-weight: 200;
   color: $gold;
   text-align: center;
   margin: 17px 20px 35px 20px;
