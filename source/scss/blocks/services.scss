@@ -1,14 +1,17 @@
 .services {
   background-color: $black;
+  margin: 108px 0 0 0;
 }
 
 .services__sub-title {
   @include section-title-mobile;
+  margin: 23px 30px;
 }
 
 .services__description {
   @include section-paragraph-mobile;
   color: $gold;
+  text-align: center;
 }
 
 .services__list {
@@ -17,8 +20,28 @@
   align-items: center;
   list-style: none;
   color: $white;
+  padding: 36px 15px;
+  margin: 0;
+
+}
+
+.services__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  &--colored {
+    background-color: $gold;
+  }
+}
+
+ .services__icon {
+  width: 100%;
 }
 
 .services__item-description {
   @include section-paragraph-mobile;
+  text-align: center;
+  margin: 14px;
 }
