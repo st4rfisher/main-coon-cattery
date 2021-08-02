@@ -1,6 +1,6 @@
 .services {
   background-color: $black;
-  margin: 108px 0 0 0;
+  padding: 31px 15px 0 15px;
 }
 
 .services__sub-title {
@@ -20,24 +20,39 @@
   align-items: center;
   list-style: none;
   color: $white;
-  padding: 36px 15px;
+  padding: 21px 0 0 0;
   margin: 0;
-
+  row-gap: 20px;
 }
 
 .services__item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 100%;
+  padding: 15px;
+  min-height: 248px;
+  box-sizing: border-box;
+  background-color: $asphalt;
+  // &--colored {
+  //   background-color: $gold;
+  // }
+}
 
-  &--colored {
-    background-color: $gold;
-  }
+.services__item-block {
+  min-height: 218px;
+  background-color: $gold;
 }
 
  .services__icon {
   width: 100%;
+  height: 88px;
+  padding: 57px 0 0 0;
+
+  .services__item--colored & {
+    padding: 38px 0 0 0;
+  }
 }
 
 .services__item-description {
