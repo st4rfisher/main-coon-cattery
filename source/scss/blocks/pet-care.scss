@@ -3,6 +3,11 @@
   flex-direction: column;
   align-items: center;
   background-color: $black;
+  background-image: url("../img/background-cat.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  padding: 29px 15px 0 15px;
 }
 
 .pet-care__title {
@@ -10,15 +15,44 @@
 }
 
 .pet-care__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  width: 100%;
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pet-care__item {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  grid-template-rows: min-content;
+  width: 100%;
+  height: auto;
+  border: 1px solid $gold;
+}
+
+
+.pet-care__item-info {
+  padding: 25px 8px 25px 25px;
 }
 
 .pet-care__item-title {
   @include text;
   color: $gold;
+  margin: 0;
 }
 
 .pet-care__description {
   @include paragraph-mobile;
   color: $white;
+}
+
+.pet-care__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 46px;
+  background-color: $gold;
 }

@@ -531,7 +531,7 @@ template {
 
 .services {
   background-color: #181617;
-  padding: 31px 15px 0 15px; }
+  padding: 31px 15px 60px 15px; }
 
 .services__sub-title {
   font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
@@ -610,7 +610,13 @@ template {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #181617; }
+  background-color: #181617;
+  background-image: url("../img/background-cat.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 29px 15px 0 15px; }
 
 .pet-care__title {
   font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
@@ -623,16 +629,36 @@ template {
   text-align: center; }
 
 .pet-care__list {
-  list-style: none; }
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.pet-care__item {
+  display: grid;
+  grid-template-columns: 1fr -webkit-min-content;
+  grid-template-columns: 1fr min-content;
+  grid-template-rows: -webkit-min-content;
+  grid-template-rows: min-content;
+  width: 100%;
+  height: auto;
+  border: 1px solid #A07B50; }
+
+.pet-care__item-info {
+  padding: 25px 8px 25px 25px; }
 
 .pet-care__item-title {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 700;
   font-size: 18px;
   line-height: 21px;
   word-break: break-word;
-  color: #A07B50; }
+  color: #A07B50;
+  margin: 0; }
 
 .pet-care__description {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
@@ -642,6 +668,13 @@ template {
   line-height: 20px;
   word-break: break-word;
   color: #FFFFFF; }
+
+.pet-care__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 46px;
+  background-color: #A07B50; }
 
 .pets-gallery {
   width: 100%; }
@@ -726,7 +759,7 @@ template {
 .team-gallery__name {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 700;
   font-size: 18px;
   line-height: 21px;
   word-break: break-word;
@@ -818,7 +851,7 @@ template {
 .reviews-gallery__name {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 700;
   font-size: 18px;
   line-height: 21px;
   word-break: break-word;
