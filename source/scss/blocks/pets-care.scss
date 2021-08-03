@@ -1,4 +1,4 @@
-.pet-care {
+.pets-care {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,11 +10,12 @@
   padding: 29px 15px 0 15px;
 }
 
-.pet-care__title {
+.pets-care__title {
   @include section-title-mobile;
+  margin: 29px 0;
 }
 
-.pet-care__list {
+.pets-care__list {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
@@ -24,7 +25,7 @@
   margin: 0;
 }
 
-.pet-care__item {
+.pets-care__item {
   display: grid;
   grid-template-columns: 1fr min-content;
   grid-template-rows: min-content;
@@ -34,22 +35,23 @@
 }
 
 
-.pet-care__item-info {
-  padding: 25px 8px 25px 25px;
+.pets-care__item-info {
+  padding: 20px 8px 19px 25px;
 }
 
-.pet-care__item-title {
+.pets-care__item-title {
   @include text;
   color: $gold;
   margin: 0;
 }
 
-.pet-care__description {
+.pets-care__description {
   @include paragraph-mobile;
   color: $white;
+  margin: 10px 0 0 0;
 }
 
-.pet-care__link {
+.pets-care__link {
   display: flex;
   align-items: center;
   justify-content: center;
