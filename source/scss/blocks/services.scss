@@ -22,7 +22,7 @@
   color: $white;
   padding: 21px 0 0 0;
   margin: 0;
-  row-gap: 20px;
+  row-gap: 30px;
 }
 
 .services__item {
@@ -35,6 +35,7 @@
   min-height: 248px;
   box-sizing: border-box;
   background-color: $asphalt;
+
   // &--colored {
   //   background-color: $gold;
   // }
@@ -47,16 +48,32 @@
 
  .services__icon {
   width: 100%;
-  height: 88px;
-  padding: 57px 0 0 0;
+  fill: $gold;
 
   .services__item--colored & {
-    padding: 38px 0 0 0;
+    height: 88px;
+    padding: 39px 0 0 0;
+    fill: $white;
+  }
+
+  .services__item:nth-child(2) & {
+    height: 70px;
+    padding: 15px 0 0 0;
+  }
+
+  .services__item:nth-child(3) & {
+    height: 88px;
+    padding: 20px 0 0 0;
   }
 }
 
 .services__item-description {
   @include section-paragraph-mobile;
   text-align: center;
-  margin: 14px;
+  margin: 13px;
+  color: $white;
+
+  .services__item:nth-child(3) & {
+    margin: 15px 20px;
+  }
 }
