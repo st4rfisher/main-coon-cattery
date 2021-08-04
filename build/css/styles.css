@@ -616,7 +616,7 @@ template {
   background-repeat: no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
-  padding: 29px 17px 0 15px; }
+  padding: 29px 17px 60px 15px; }
 
 .pets-care__title {
   font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
