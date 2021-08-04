@@ -152,6 +152,7 @@ const reload = (done) => {
 const watcher = () => {
   gulp.watch("source/scss/**/*.scss", gulp.series(styles));
   gulp.watch("source/js/**/*.js", gulp.series(scripts));
+  gulp.watch("source/img/icons/*.svg", gulp.series(sprite));
   gulp.watch("source/*.html", gulp.series(html, reload));
 }
 

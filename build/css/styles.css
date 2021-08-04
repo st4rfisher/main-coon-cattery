@@ -616,7 +616,7 @@ template {
   background-repeat: no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
-  padding: 29px 15px 0 15px; }
+  padding: 29px 17px 0 15px; }
 
 .pets-care__title {
   font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
@@ -627,7 +627,7 @@ template {
   word-break: break-word;
   color: #FFFFFF;
   text-align: center;
-  margin: 29px 0; }
+  margin: 24px 24px 33px 24px; }
 
 .pets-care__list {
   display: flex;
@@ -649,7 +649,7 @@ template {
   border: 1px solid #A07B50; }
 
 .pets-care__item-info {
-  padding: 20px 8px 19px 25px; }
+  padding: 20px 6px 19px 24px; }
 
 .pets-care__item-title {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
@@ -677,6 +677,11 @@ template {
   justify-content: center;
   min-width: 46px;
   background-color: #A07B50; }
+
+.pets-care__arrow {
+  width: 18px;
+  height: 45px;
+  fill: #FFFFFF; }
 
 .pets-gallery {
   width: 100%; }

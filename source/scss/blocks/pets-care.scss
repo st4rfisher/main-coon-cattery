@@ -7,12 +7,12 @@
   background-position: center;
   background-repeat: no-repeat;
   object-fit: cover;
-  padding: 29px 15px 0 15px;
+  padding: 29px 17px 0 15px;
 }
 
 .pets-care__title {
   @include section-title-mobile;
-  margin: 29px 0;
+  margin: 24px 24px 33px 24px;
 }
 
 .pets-care__list {
@@ -34,9 +34,8 @@
   border: 1px solid $gold;
 }
 
-
 .pets-care__item-info {
-  padding: 20px 8px 19px 25px;
+  padding: 20px 6px 19px 24px;
 }
 
 .pets-care__item-title {
@@ -57,4 +56,10 @@
   justify-content: center;
   min-width: 46px;
   background-color: $gold;
+}
+
+.pets-care__arrow {
+  width: 18px;
+  height: 45px;
+   fill: $white;
 }
