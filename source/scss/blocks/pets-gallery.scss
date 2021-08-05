@@ -50,4 +50,6 @@
 
 .pets-gallery__slider {
   @include for-slider;
+  stroke: $gold;
+  stroke-width:5;
 }

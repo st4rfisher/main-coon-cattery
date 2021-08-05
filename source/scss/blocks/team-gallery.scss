@@ -1,37 +1,136 @@
+// .team-gallery {
+
+// }
+
+// .team-gallery__photos-list {
+//   list-style: none;
+//   margin: 0;
+//   padding: 0;
+// }
+
+// .team-gallery__photos-wrapper {
+//   position: relative;
+//   margin: 35px 0 41px;
+//   padding: 0px 28px;
+// }
+
+// .team-gallery__photo {
+//   display: none;
+
+//   &--show {
+//     display: block;
+//   }
+// }
+
+// .team-gallery__photo img {
+//   display: block;
+//   margin: 0 auto;
+// }
+
+// .team-gallery__photo-info {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   margin: 21px 0 0 0;
+// }
+
+// .team-gallery__name {
+//   @include text;
+//   font-weight: 500;
+//   color: $gold;
+// }
+
+// .team-gallery__position {
+//   color: $gold;
+// }
+
+// .team-gallery__blockquote {
+//   @include section-paragraph-mobile;
+//   opacity: 0.72;
+//   text-align: center;
+//   color: $white;
+//   margin: 20px 0 0 0;
+// }
+
+// .team-gallery__link {
+//   @include button-link;
+// }
+
+// .team-gallery__sliders {
+//   position: absolute;
+//   display: flex;
+//   justify-content: space-between;
+//   top: 65px;
+//   left: 0;
+//   transform: translateY(-50%);
+//   width: 100%;
+// }
+
+// .team-gallery__slider {
+//   @include for-slider;
+//   stroke: $gold;
+//   stroke-width:5;
+// }
+
 .team-gallery {
+
+}
+
+.team-gallery__photos-wrapper {
+  margin: 35px 0 41px;
+  padding: 0px 28px;
+}
+
+.team-gallery__photo-block {
   position: relative;
+}
+
+.team-gallery__photo {
+  display: block;
+  margin: 0 auto;
+}
+
+.team-gallery__photo-info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  margin: 21px 0 0 0;
+}
+
+.team-gallery__name {
+  @include text;
+  font-weight: 500;
+  color: $gold;
+}
+
+.team-gallery__position {
+  color: $gold;
+}
+
+.team-gallery__blockquote {
+  @include section-paragraph-mobile;
+  opacity: 0.72;
+  text-align: center;
+  color: $white;
+  margin: 20px 0 0 0;
+}
+
+.team-gallery__link {
+  @include button-link;
 }
 
 .team-gallery__sliders {
   position: absolute;
   display: flex;
   justify-content: space-between;
-  top: 50%;
+  top: 65px;
   left: 0;
   transform: translateY(-50%);
   width: 100%;
 }
 
-.team-gallery__name {
-  @include text;
-  color: $gold;
-}
-
-.team-gallery__position {
-  @include section-paragraph-mobile;
-  color: $gold;
-}
-
-.team-gallery__description {
-  @include section-paragraph-mobile;
-  color: $white;
-}
-
-.team-gallery__social-list {
-  list-style: none;
-
+.team-gallery__slider {
+  @include for-slider;
+  stroke: $gold;
+  stroke-width:5;
 }

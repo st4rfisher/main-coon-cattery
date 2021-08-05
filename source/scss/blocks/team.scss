@@ -14,6 +14,29 @@
   @include paragraph-mobile;
   color: $gold;
   text-align: center;
-  margin: 0 20px 35px 20px;
+  margin: 0 20px;
 }
 
+.team-gallery__sliders {
+
+}
+
+.team-gallery__name {
+  @include text;
+  color: $gold;
+}
+
+.team-gallery__position {
+  @include paragraph-mobile;
+  color: $gold;
+}
+
+.team-gallery__description {
+  @include section-paragraph-mobile;
+  color: $white;
+}
+
+.team-gallery__social-list {
+  list-style: none;
+
+}

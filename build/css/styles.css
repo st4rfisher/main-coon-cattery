@@ -681,7 +681,8 @@ template {
 .pets-care__arrow {
   width: 18px;
   height: 45px;
-  fill: #FFFFFF; }
+  stroke: #FFFFFF;
+  stroke-width: 5; }
 
 .pets-gallery {
   width: 100%; }
@@ -736,7 +737,9 @@ template {
   background: none;
   border: none;
   outline: none;
-  padding: 0; }
+  padding: 0;
+  stroke: #A07B50;
+  stroke-width: 5; }
 
 .team {
   display: flex;
@@ -764,23 +767,7 @@ template {
   word-break: break-word;
   color: #A07B50;
   text-align: center;
-  margin: 0 20px 35px 20px; }
-
-.team-gallery {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%; }
-
-.team-gallery__sliders {
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  width: 100%; }
+  margin: 0 20px; }
 
 .team-gallery__name {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
@@ -811,6 +798,77 @@ template {
 
 .team-gallery__social-list {
   list-style: none; }
+
+.team-gallery__photos-wrapper {
+  margin: 35px 0 41px;
+  padding: 0px 28px; }
+
+.team-gallery__photo-block {
+  position: relative; }
+
+.team-gallery__photo {
+  display: block;
+  margin: 0 auto; }
+
+.team-gallery__photo-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 21px 0 0 0; }
+
+.team-gallery__name {
+  font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  word-break: break-word;
+  font-weight: 500;
+  color: #A07B50; }
+
+.team-gallery__position {
+  color: #A07B50; }
+
+.team-gallery__blockquote {
+  font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 20px;
+  word-break: break-word;
+  opacity: 0.72;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 20px 0 0 0; }
+
+.team-gallery__link {
+  font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  word-break: break-word;
+  padding: 11px 20px 13px 20px;
+  border: 1px solid #A07B50;
+  color: #FFFFFF;
+  text-decoration: none; }
+
+.team-gallery__sliders {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 65px;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%; }
+
+.team-gallery__slider {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  stroke: #A07B50;
+  stroke-width: 5; }
 
 .questions-answers {
   display: flex;
