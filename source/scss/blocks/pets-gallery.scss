@@ -49,7 +49,10 @@
 }
 
 .pets-gallery__slider {
-  @include for-slider;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
   stroke: $gold;
   stroke-width:5;
 }

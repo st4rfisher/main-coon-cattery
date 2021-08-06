@@ -888,7 +888,8 @@ template {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #1F1C1D; }
+  background-color: #1F1C1D;
+  padding: 30px 15px 20px 15px; }
 
 .questions-answers__title {
   font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
@@ -907,11 +908,21 @@ template {
   font-size: 14px;
   line-height: 20px;
   word-break: break-word;
-  color: #A07B50; }
+  color: #A07B50;
+  text-align: center;
+  margin: 0px 32px; }
 
 .questions-answers__list {
   list-style: none;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  margin: 5px 0 0;
+  padding: 0; }
+
+.questions-answers__item {
+  margin: 30px 0 0 0; }
+
+.questions-answers__item-block {
+  display: flex; }
 
 .questions-answers__question {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
@@ -920,7 +931,12 @@ template {
   font-size: 14px;
   line-height: 20px;
   word-break: break-word;
-  font-style: 500; }
+  flex-grow: 1;
+  font-style: 500;
+  border: 1px solid #544332;
+  margin: 0;
+  padding: 9px 14px 10px 13px;
+  letter-spacing: 0.01em; }
 
 .questions-answers__answer {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
@@ -928,7 +944,26 @@ template {
   font-weight: 200;
   font-size: 14px;
   line-height: 20px;
-  word-break: break-word; }
+  word-break: break-word;
+  display: none;
+  border-left: 1px solid #544332;
+  border-bottom: 1px solid #544332;
+  border-right: 1px solid #544332;
+  padding: 9px 14px 5px 13px;
+  box-sizing: border-box; }
+  .questions-answers__answer--show {
+    display: block; }
+
+.questions-answers__paragraph {
+  margin: 0 0 5px 0; }
+
+.questions-answers__button {
+  border: 1px solid #A07B50;
+  background: none;
+  padding: 10px 12px 5px 13px; }
+  .questions-answers__button--active {
+    background-color: #A07B50;
+    fill: red; }
 
 .reviews {
   display: flex;
