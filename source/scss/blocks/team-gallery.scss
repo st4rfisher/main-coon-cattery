@@ -77,12 +77,17 @@
 }
 
 .team-gallery__photos-wrapper {
+  position: relative;
   margin: 35px 0 41px;
 }
 
 .team-gallery__photo-block {
-  position: relative;
-  margin: 0 50px;
+  position: absolute;
+  top: -63px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 31px;
+
 }
 
 .team-gallery__photo {
@@ -94,7 +99,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 21px 0 0 0;
+  margin: 98px 0 0 0;
+  padding: 84px 0 12px 0;
+  background-color: $asphalt;
 }
 
 .team-gallery__name {
