@@ -201,12 +201,12 @@
                       <use xlink:href="img/icons/sprite.svg#facebook-icon"></use>
                     </svg>
                   </li>
-                  <li class="team-gallery__icon">
+                  <li class="team-gallery__item">
                     <svg class="team-gallery__icon" width="16" height="12">
                       <use xlink:href="img/icons/sprite.svg#twitter-icon"></use>
                     </svg>
                   </li>
-                  <li class="team-gallery__icon">
+                  <li class="team-gallery__item">
                     <svg class="team-gallery__icon" width="18" height="10">
                       <use xlink:href="img/icons/sprite.svg#vk-icon"></use>
                     </svg>
@@ -281,22 +281,42 @@
         <section class="reviews">
           <h1 class="reviews__title">Отзывы</h1>
           <div class="reviews-gallery">
-            <img class="reviews-gallery__photo" src="" alt="">
-            <div class="reviews-gallery__sliders">
-              <button class="reviews-gallery__slider reviews-gallery__slider--left"></button>
-              <button class="reviews-gallery__slider reviews-gallery__slider--right"></button>
-            </div>
-            <div class="reviews-gallery__info">
-              <span class="reviews-gallery__name">Серёжа Попов</span>
-              <p class="reviews-gallery__review">
-                Я выражаю огромную благодарность вашему питомнику.  Мой Феликс невероятно умен
-                и воспитан. Огромным плюсом питомника является возможность консультироваться в любое время
-              </p>
-              <span class="reviews-gallery__date">24 мая 2018</span>
-              <ul class="reviews-gallery__social-list">
-                <li class="reviews-gallery__social-item"></li>
-                <li class="reviews-gallery__social-item"></li>
-              </ul>
+            <div class="reviews-gallery__photos-wrapper">
+              <div class="reviews-gallery__photo-block">
+                <img class="reviews-gallery__photo" src="img/photo-2.jpg" alt="">
+                <div class="reviews-gallery__sliders">
+                  <button class="reviews-gallery__slider team-gallery__slider--left">
+                    <svg class="reviews-gallery__arrow" width="22" height="45">
+                      <use xlink:href="img/icons/sprite.svg#arrow-left-icon"></use>
+                    </svg>
+                  </button>
+                  <button class="reviews-gallery__slider team-gallery__slider--right">
+                    <svg class="reviews-gallery__arrow" width="22" height="45">
+                      <use xlink:href="img/icons/sprite.svg#arrow-right-icon"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="reviews-gallery__photo-info">
+                <span class="reviews-gallery__name">Василиса Лазарева</span>
+                <p class="reviews-gallery__blockquote">
+                  Я выражаю огромную благодарность вашему питомнику. Мой Феликс невероятно умен
+                  и воспитан. Огромным плюсом питомника является возможность консультироваться в любое время
+                </p>
+                <ul class="reviews-gallery__social-list">
+                  <li class="review-gallery__item">
+                    <svg class="reviews-gallery__icon" width="28" height="28">
+                      <use xlink:href="img/icons/sprite.svg#review-twitter-icon"></use>
+                    </svg>
+                  </li>
+                  <li class="reviews-gallery__item">
+                    <svg class="reviews-gallery__icon" width="28" height="29">
+                      <use xlink:href="img/icons/sprite.svg#review-vk-icon"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <time class="reviews-gallery__date" datetime="2018-05-24">24 мая 2018</time>
+              </div>
             </div>
           </div>
         </section>
