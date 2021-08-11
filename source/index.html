@@ -9,13 +9,35 @@
   <body class="page">
     <header class="header">
       <div class="header__container">
-        <div class="header__content">
+        <nav class="header__navigation">
+          <div class="menu">
+            <ul class="menu">
+              <li class="menu__item menu__item--active"><a class="menu__item-link" href="index.html">Главная</a></li>
+              <li class="menu__item"><a class="menu__item-link" href="catalog.html">Фото и видео</a></li>
+              <li class="menu__item"><a class="menu__item-link" href="review.html">Форма отзыва</a></li>
+              <li class="menu__item"><a class="menu__item-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+            </ul>
+
+            <button class="menu__close-button" type="button" aria-label="Закрыть меню">
+              <svg class="menu__icon" width="35" height="18">
+                <use xlink:href="img/icons/sprite.svg#burger-menu-icon"></use>
+              </svg>
+            </button>
+          </div>
+          <button class="header__burger-menu" type="button" aria-label="Закрыть меню">
+            <svg class="header__icon" width="35" height="18">
+              <use xlink:href="img/icons/sprite.svg#burger-menu-icon"></use>
+            </svg>
+          </button>
           <a class="header__logo" href="#">
             <span class="visually-hidden">Логотип Питомника Мейн-Кунов</span>
             <svg class="header__image" width="55" height="25">
               <use xlink:href="img/icons/sprite.svg#logo"></use>
             </svg>
           </a>
+        </nav>
+
+        <div class="header__content">
           <p class="header__city">Новосибирск</p>
           <h1 class="header__title">Питомник Мейн-Кунов</h1>
           <p class="header__description" >Первый питомник с расширенным спектром услуг</p>

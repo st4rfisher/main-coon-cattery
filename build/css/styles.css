@@ -366,10 +366,29 @@ template {
   background-repeat: no-repeat;
   background-position: 100% 100%; }
 
+.header__navigation {
+  position: relative;
+  display: flex;
+  padding: 0 15px; }
+
+.header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%); }
+
+.header__burger-menu {
+  background: none;
+  outline: none;
+  border: none;
+  padding: 0;
+  height: auto; }
+
 .header__content {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  margin: 52px 0 0 0; }
 
 .header__city {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
@@ -379,8 +398,8 @@ template {
   line-height: 20px;
   word-break: break-word;
   color: #A07B50;
-  margin: 45px 0 0 0;
-  text-align: center; }
+  text-align: center;
+  margin: 0; }
 
 .header__title {
   font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
@@ -416,6 +435,9 @@ template {
   color: #FFFFFF;
   text-decoration: none;
   margin: 0 auto; }
+
+.menu {
+  display: none; }
 
 .main__container {
   padding: 40px 0 0 0;

@@ -41,6 +41,10 @@
   <line style="stroke-miterlimit:10;" x1="40.5" x2="87.5" y1="17" y2="64"/>
   <line style="stroke-miterlimit:10;" x1="87.5" x2="40.5" y1="64" y2="111"/>
   </g>
+</symbol><symbol id="burger-menu-icon" viewBox="0 0 35 18">
+<path d="M0 1H35" stroke="#E5E5E5" stroke-width="0.5"/>
+<path d="M0 9H35" stroke="#E5E5E5" stroke-width="0.5"/>
+<path d="M0 17H35" stroke="#E5E5E5" stroke-width="0.5"/>
 </symbol><symbol id="curtail-icon" viewBox="0 0 16 2">
 <path d="M0 1H16" stroke="white" stroke-width="2"/>
 </symbol><symbol id="facebook-icon" viewBox="0 0 5 12">

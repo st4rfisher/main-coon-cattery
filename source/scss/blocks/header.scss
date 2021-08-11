@@ -9,17 +9,39 @@
   background-position: 100% 100%;
 }
 
+.header__navigation {
+  position: relative;
+  display: flex;
+  padding: 0 15px;
+}
+
+.header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.header__burger-menu {
+  background: none;
+  outline: none;
+  border: none;
+  padding: 0;
+  height: auto;
+}
+
 .header__content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 52px 0 0 0;
 }
 
 .header__city {
   @include paragraph-mobile;
   color: $gold;
-  margin: 45px 0 0 0;
   text-align: center;
+  margin: 0;
 }
 
 .header__title {
