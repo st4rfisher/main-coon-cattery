@@ -361,10 +361,20 @@ template {
   background-color: #181617; }
 
 .header__container {
-  padding: 27px 15px 276px 15px;
-  background-image: url("../img/cat-1.png");
+  padding: 27px 15px 27px 15px;
+  background-image: url("../img/cat-1-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 100% 100%; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+    .header__container {
+      background-image: url("../img/cat-1-mobile@2x.png"); } }
+  @media (min-width: 768px) {
+    .header__container {
+      background-image: url("../img/cat-1-tablet@1x.png");
+      padding: 31px 26px 118px 26px; } }
+  @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 1.5dppx) {
+    .header__container {
+      background-image: url("../img/cat-1-tablet@2x.png"); } }
 
 .header__navigation {
   position: relative;
@@ -388,7 +398,12 @@ template {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 52px 0 0 0; }
+  margin: 52px 0 249px 0; }
+  @media (min-width: 768px) {
+    .header__content {
+      margin: 92px 0 0 15px;
+      align-items: flex-start;
+      max-width: 350px; } }
 
 .header__city {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
@@ -400,6 +415,14 @@ template {
   color: #A07B50;
   text-align: center;
   margin: 0; }
+  @media (min-width: 768px) {
+    .header__city {
+      font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      word-break: break-word; } }
 
 .header__title {
   font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
@@ -411,6 +434,16 @@ template {
   color: #FFFFFF;
   text-align: center;
   margin: 4px 0 0 0; }
+  @media (min-width: 768px) {
+    .header__title {
+      font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 52px;
+      line-height: 60px;
+      word-break: break-word;
+      text-align: left;
+      margin: 18px 0 0 0; } }
 
 .header__description {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
@@ -422,6 +455,17 @@ template {
   color: #A07B50;
   text-align: center;
   margin: 17px 20px 35px 20px; }
+  @media (min-width: 768px) {
+    .header__description {
+      font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      word-break: break-word;
+      max-width: 270px;
+      text-align: left;
+      margin: 19px 0 52px 0; } }
 
 .header__link {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
@@ -435,13 +479,29 @@ template {
   color: #FFFFFF;
   text-decoration: none;
   margin: 0 auto; }
+  @media (min-width: 768px) {
+    .header__link {
+      font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      word-break: break-word; } }
+  @media (min-width: 768px) {
+    .header__link {
+      margin: 0;
+      margin-right: auto;
+      padding: 16px 43px 18px 36px; } }
 
-.menu {
+.menu-block {
   display: none; }
 
 .main__container {
   padding: 40px 0 0 0;
   background-color: #1F1C1D; }
+  @media (min-width: 768px) {
+    .main__container {
+      padding: 85px 0 0 0; } }
 
 .page {
   min-width: 320px; }
@@ -462,6 +522,16 @@ template {
   color: #FFFFFF;
   text-align: center;
   margin: 13px 0 10px 0; }
+  @media (min-width: 768px) {
+    .pets__title {
+      font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 36px;
+      line-height: 42px;
+      word-break: break-word;
+      color: #FFFFFF;
+      margin: 13px 0 7px 0; } }
 
 .pets__description {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
@@ -472,31 +542,15 @@ template {
   word-break: break-word;
   color: #A07B50;
   text-align: center; }
-
-.pets-gallery__list {
-  font-family: "Roboto", "Arial", "Tahoma", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  word-break: break-word;
-  display: flex;
-  justify-content: space-between;
-  color: #FFFFFF;
-  list-style: none;
-  margin: 0;
-  padding: 14px 27px; }
-
-.pets-gallery__photos {
-  list-style: none; }
-
-.pets-gallery__link {
-  font-family: "Roboto", "Arial", "Tahoma", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
-  word-break: break-word; }
+  @media (min-width: 768px) {
+    .pets__description {
+      font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 26px;
+      word-break: break-word;
+      max-width: 530px; } }
 
 .features {
   display: flex;
@@ -709,30 +763,62 @@ template {
 .pets-gallery {
   width: 100%; }
 
-.pets-gallery__item {
-  opacity: 0.2; }
-  .pets-gallery__item--active {
-    opacity: 1; }
-
-.pets-gallery__block {
-  display: none;
+.pets-gallery__list {
+  font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  word-break: break-word;
+  display: flex;
+  justify-content: space-between;
+  color: #FFFFFF;
   list-style: none;
   margin: 0;
-  padding: 0; }
-
-.pets-gallery__show {
-  display: block; }
+  padding: 14px 27px; }
+  @media (min-width: 768px) {
+    .pets-gallery__list {
+      font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 21px;
+      word-break: break-word; } }
 
 .pets-gallery__photos-wrapper {
   position: relative;
   margin: 23px 0 41px;
   padding: 0px 28px; }
 
+.pets-gallery__photos {
+  list-style: none; }
+
+.pets-gallery__block {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .pets-gallery__block--show {
+    display: block; }
+
+.pets-gallery__item {
+  opacity: 0.2; }
+  .pets-gallery__item--active {
+    opacity: 1; }
+
+.pets-gallery__link {
+  font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  word-break: break-word; }
+
 .pets-gallery__photo {
   min-width: 234px; }
 
-.pets-gallery__photo img {
-  width: 100%; }
+.pets-gallery__image {
+  height: 100%; }
 
 .pets-gallery__link {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
@@ -745,6 +831,14 @@ template {
   border: 1px solid #A07B50;
   color: #FFFFFF;
   text-decoration: none; }
+  @media (min-width: 768px) {
+    .pets-gallery__link {
+      font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      word-break: break-word; } }
 
 .pets-gallery__sliders {
   position: absolute;
@@ -880,6 +974,14 @@ template {
   border: 1px solid #A07B50;
   color: #FFFFFF;
   text-decoration: none; }
+  @media (min-width: 768px) {
+    .team-gallery__link {
+      font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      word-break: break-word; } }
 
 .team-gallery__sliders {
   position: absolute;
@@ -1067,6 +1169,14 @@ template {
   border: 1px solid #A07B50;
   color: #FFFFFF;
   text-decoration: none; }
+  @media (min-width: 768px) {
+    .reviews-gallery__link {
+      font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      word-break: break-word; } }
 
 .reviews-gallery__sliders {
   position: absolute;

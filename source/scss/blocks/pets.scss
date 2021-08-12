@@ -8,28 +8,20 @@
 .pets__title {
   @include section-title-mobile;
   margin: 13px 0 10px 0;
+
+  @media (min-width: $tablet) {
+    @include section-title;
+    margin: 13px 0 7px 0;
+  }
 }
 
 .pets__description {
   @include paragraph-mobile;
   color: $gold;
   text-align: center;
-}
 
-.pets-gallery__list {
-  @include button-text;
-  display: flex;
-  justify-content: space-between;
-  color: $white;
-  list-style: none;
-  margin: 0;
-  padding: 14px 27px;
-}
-
-.pets-gallery__photos {
-  list-style: none;
-}
-
-.pets-gallery__link {
-  @include link-text-mobile;
+  @media (min-width: $tablet) {
+    @include section-paragraph;
+    max-width: 530px;
+  }
 }

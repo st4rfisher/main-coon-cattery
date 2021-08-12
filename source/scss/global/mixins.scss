@@ -64,7 +64,7 @@
 }
 
 @mixin section-title  {
-  font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+  font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -115,4 +115,8 @@
   border: 1px solid $gold;
   color: $white;
   text-decoration: none;
+
+  @media (min-width: $tablet) {
+    @include link-text;
+  }
 }
