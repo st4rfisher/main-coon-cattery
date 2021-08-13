@@ -44,10 +44,6 @@
   }
 }
 
-.pets-gallery__link {
-  @include link-text-mobile;
-}
-
 .pets-gallery__photo {
   min-width: 234px;
 }
@@ -57,7 +53,8 @@
 }
 
 .pets-gallery__link {
-  @include button-link;
+  @include button-text;
+
 }
 
 .pets-gallery__sliders {
@@ -77,4 +74,8 @@
   padding: 0;
   stroke: $gold;
   stroke-width:5;
+}
+
+.pets-gallery__button-link {
+  @include button-link;
 }
