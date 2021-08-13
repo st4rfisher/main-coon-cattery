@@ -818,7 +818,7 @@ template {
   min-width: 234px; }
 
 .pets-gallery__image {
-  height: 100%; }
+  width: 100%; }
 
 .pets-gallery__link {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
