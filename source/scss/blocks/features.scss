@@ -4,10 +4,20 @@
   align-items: center;
   background-color: $asphalt;
   padding: 30px 15px 54px 15px;
+
+
+  @media (min-width: $tablet) {
+    padding: 50px 15px 67px;
+  }
 }
 
 .features__title {
   @include section-title-mobile;
+
+  @media (min-width: $tablet) {
+    @include section-title;
+    margin: 39px 0 23px;
+  }
 }
 
 .features__description {
@@ -15,6 +25,16 @@
   color: $gold;
   text-align: center;
   margin: 0 8px 25px 8px;
+
+  @media (min-width: $tablet) {
+    @include section-paragraph;
+    max-width: 450px;
+    margin: 0;
+  }
+}
+
+.features__photo {
+  margin: 48px 0 0 10px;
 }
 
 .features__list {
@@ -22,12 +42,56 @@
   color: $white;
   padding: 0 16px 0 18px;
   margin: 11px 0 0 0;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    width: 100%;
+
+  }
 }
 
 .features__item {
   position: relative;
   @include paragraph-mobile;
   margin: 20px 0 0 0;
+
+  @media (min-width: $tablet) {
+    position: absolute;
+
+    &--first {
+      top: -382px;
+      left: 50px;
+      max-width: 140px;
+      text-align: right;
+    }
+
+    &--second {
+      @include paragraph;
+      top: -311px;
+      right: 32px;
+      max-width: 130px;
+      text-align: left;
+    }
+
+    &--third {
+      @include paragraph;
+      top: -165px;
+      right: 71px;
+      max-width: 115px;
+      text-align: left;
+    }
+
+    &--fourth {
+      @include paragraph;
+      top: -193px;
+      left: 42px;
+      max-width: 140px;
+      text-align: right;
+    }
+  }
+
+
+
   &:before {
     position: absolute;
     content: '';
@@ -37,5 +101,9 @@
     height: 8px;
     background-color: $gold;
     border-radius: 50%;
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
   }
 }
