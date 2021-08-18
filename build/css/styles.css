@@ -683,6 +683,9 @@ template {
 .services {
   background-color: #181617;
   padding: 31px 15px 60px 15px; }
+  @media (min-width: 768px) {
+    .services {
+      padding: 59px 15px 100px 15px; } }
 
 .services__sub-title {
   font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
@@ -694,6 +697,15 @@ template {
   color: #FFFFFF;
   text-align: center;
   margin: 23px 30px; }
+  @media (min-width: 768px) {
+    .services__sub-title {
+      font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 36px;
+      line-height: 42px;
+      word-break: break-word;
+      color: #FFFFFF; } }
 
 .services__description {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
@@ -704,6 +716,14 @@ template {
   word-break: break-word;
   color: #A07B50;
   text-align: center; }
+  @media (min-width: 768px) {
+    .services__description {
+      font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 26px;
+      word-break: break-word; } }
 
 .services__list {
   display: flex;
@@ -714,13 +734,17 @@ template {
   padding: 21px 0 0 0;
   margin: 0;
   row-gap: 30px; }
+  @media (min-width: 768px) {
+    .services__list {
+      padding: 43px 0 0 0;
+      row-gap: 45px; } }
 
 .services__item {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  max-width: 360px;
   padding: 15px;
   min-height: 248px;
   box-sizing: border-box;
@@ -737,12 +761,24 @@ template {
     height: 88px;
     padding: 39px 0 0 0;
     fill: #FFFFFF; }
+    @media (min-width: 768px) {
+      .services__item--colored .services__icon {
+        height: 108px;
+        padding: 50px 0 0; } }
   .services__item:nth-child(2) .services__icon {
     height: 70px;
     padding: 15px 0 0 0; }
+    @media (min-width: 768px) {
+      .services__item:nth-child(2) .services__icon {
+        height: 95px;
+        padding: 54px 0 0; } }
   .services__item:nth-child(3) .services__icon {
     height: 88px;
     padding: 20px 0 0 0; }
+    @media (min-width: 768px) {
+      .services__item:nth-child(3) .services__icon {
+        height: 108px;
+        padding: 52px 0 0; } }
 
 .services__item-description {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
@@ -754,8 +790,23 @@ template {
   text-align: center;
   margin: 13px;
   color: #FFFFFF; }
+  @media (min-width: 768px) {
+    .services__item-description {
+      font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 26px;
+      word-break: break-word;
+      margin: 30px; } }
+  @media (min-width: 768px) {
+    .services__item:nth-child(2) .services__item-description {
+      margin: 43px 30px 33px 27px; } }
   .services__item:nth-child(3) .services__item-description {
     margin: 15px 20px; }
+    @media (min-width: 768px) {
+      .services__item:nth-child(3) .services__item-description {
+        margin: 33px 40px; } }
 
 .pets-care {
   display: flex;

@@ -1,17 +1,29 @@
 .services {
   background-color: $black;
   padding: 31px 15px 60px 15px;
+
+  @media (min-width: $tablet) {
+    padding: 59px 15px 100px 15px;
+  }
 }
 
 .services__sub-title {
   @include section-title-mobile;
   margin: 23px 30px;
+
+  @media (min-width: $tablet) {
+    @include section-title;
+  }
 }
 
 .services__description {
   @include section-paragraph-mobile;
   color: $gold;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    @include section-paragraph;
+  }
 }
 
 .services__list {
@@ -23,6 +35,11 @@
   padding: 21px 0 0 0;
   margin: 0;
   row-gap: 30px;
+
+  @media (min-width: $tablet) {
+    padding: 43px 0 0 0;
+    row-gap: 45px;
+  }
 }
 
 .services__item {
@@ -30,15 +47,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  max-width: 360px;
   padding: 15px;
   min-height: 248px;
   box-sizing: border-box;
   background-color: $asphalt;
-
-  // &--colored {
-  //   background-color: $gold;
-  // }
 }
 
 .services__item-block {
@@ -54,16 +67,31 @@
     height: 88px;
     padding: 39px 0 0 0;
     fill: $white;
+
+    @media (min-width: $tablet) {
+      height: 108px;
+      padding: 50px 0 0;
+    }
   }
 
   .services__item:nth-child(2) & {
     height: 70px;
     padding: 15px 0 0 0;
+
+    @media (min-width: $tablet) {
+      height: 95px;
+      padding: 54px 0 0;
+    }
   }
 
   .services__item:nth-child(3) & {
     height: 88px;
     padding: 20px 0 0 0;
+
+    @media (min-width: $tablet) {
+      height: 108px;
+      padding: 52px 0 0;
+    }
   }
 }
 
@@ -73,7 +101,22 @@
   margin: 13px;
   color: $white;
 
+  @media (min-width: $tablet) {
+    @include section-paragraph;
+    margin: 30px;
+  }
+
+  .services__item:nth-child(2) & {
+    @media (min-width: $tablet) {
+      margin: 43px 30px 33px 27px;
+    }
+  }
+
   .services__item:nth-child(3) & {
     margin: 15px 20px;
+
+    @media (min-width: $tablet) {
+      margin: 33px 40px;
+    }
   }
 }
