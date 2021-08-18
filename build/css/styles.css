@@ -627,9 +627,10 @@ template {
   margin: 20px 0 0 0; }
   @media (min-width: 768px) {
     .features__item {
-      position: absolute; }
+      position: absolute;
+      margin: 0; }
       .features__item--first {
-        top: -382px;
+        top: -362px;
         left: 50px;
         max-width: 140px;
         text-align: right; }
@@ -640,7 +641,7 @@ template {
         font-size: 16px;
         line-height: 24px;
         word-break: break-word;
-        top: -311px;
+        top: -291px;
         right: 32px;
         max-width: 130px;
         text-align: left; }
@@ -651,7 +652,7 @@ template {
         font-size: 16px;
         line-height: 24px;
         word-break: break-word;
-        top: -165px;
+        top: -145px;
         right: 71px;
         max-width: 115px;
         text-align: left; }
@@ -662,7 +663,7 @@ template {
         font-size: 16px;
         line-height: 24px;
         word-break: break-word;
-        top: -193px;
+        top: -173px;
         left: 42px;
         max-width: 140px;
         text-align: right; } }
