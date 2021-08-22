@@ -27,7 +27,7 @@
 }
 
 .team-gallery__name {
-  @include text;
+  @include text-mobile;
   font-weight: 500;
   color: $gold;
 }

@@ -29,7 +29,7 @@
   @include button-text;
 
   @media (min-width: $tablet) {
-    @include text;
+    @include text-mobile;
   }
 }
 
@@ -85,5 +85,9 @@
 
 .pets-gallery__button-link {
   @include button-link;
-  padding: 18px 43px 18px 40px;
+  padding: 10px 20px 13px 20px;
+
+  @media (min-width: $tablet) {
+    padding: 18px 43px 18px 40px;
+  }
 }

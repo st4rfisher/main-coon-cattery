@@ -6,13 +6,22 @@
   background-image: url("../img/background-cat.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  object-fit: cover;
+  background-size: cover;
   padding: 29px 17px 60px 15px;
+
+  @media (min-width: $tablet) {
+    padding: 59px 99px 99px 113px;;
+  }
 }
 
 .pets-care__title {
   @include section-title-mobile;
   margin: 24px 24px 33px 24px;
+
+  @media (min-width: $tablet) {
+    @include section-title;
+    margin: 28px 44px 40px 27px;
+  }
 }
 
 .pets-care__list {
@@ -23,6 +32,10 @@
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet) {
+    row-gap: 23px;
+  }
 }
 
 .pets-care__item {
@@ -36,18 +49,44 @@
 
 .pets-care__item-info {
   padding: 20px 6px 19px 24px;
+
+  @media (min-width: $tablet) {
+    &--wool {
+      padding: 37px 45px 48px 48px;
+    }
+
+    &--ears-eyes {
+      padding: 32px 45px 30px 47px;
+    }
+
+    &--claws {
+      padding: 38px 45px 46px 48px;
+    }
+
+    &--feed {
+      padding: 35px 45px 27px 48px;
+    }
+  }
 }
 
 .pets-care__item-title {
-  @include text;
+  @include text-mobile;
   color: $gold;
   margin: 0;
+
+  @media (min-width: $tablet) {
+    @include text;
+  }
 }
 
 .pets-care__description {
   @include paragraph-mobile;
   color: $white;
   margin: 10px 0 0 0;
+
+  @media (min-width: $tablet) {
+    line-height: 23px;
+  }
 }
 
 .pets-care__link {
@@ -56,6 +95,10 @@
   justify-content: center;
   min-width: 46px;
   background-color: $gold;
+
+  @media (min-width: $tablet) {
+    min-width: 58px;
+  }
 }
 
 .pets-care__arrow {

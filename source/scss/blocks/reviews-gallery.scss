@@ -32,7 +32,7 @@
 }
 
 .reviews-gallery__name {
-  @include text;
+  @include text-mobile;
   font-weight: 500;
   color: $white;
   text-align: center;

@@ -102,12 +102,21 @@
   color: $white;
 }
 
-@mixin text {
+@mixin text-mobile {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
+  word-break: break-word;
+}
+
+@mixin text {
+  font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
   word-break: break-word;
 }
 
