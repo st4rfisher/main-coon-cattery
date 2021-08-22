@@ -419,7 +419,7 @@ template {
     .header__city {
       font-family: "Roboto", "Arial", "Tahoma", sans-serif;
       font-style: normal;
-      font-weight: 300;
+      font-weight: 400;
       font-size: 16px;
       line-height: 24px;
       word-break: break-word; } }
@@ -459,7 +459,7 @@ template {
     .header__description {
       font-family: "Roboto", "Arial", "Tahoma", sans-serif;
       font-style: normal;
-      font-weight: 300;
+      font-weight: 400;
       font-size: 16px;
       line-height: 24px;
       word-break: break-word;
@@ -546,7 +546,7 @@ template {
     .pets__description {
       font-family: "Roboto", "Arial", "Tahoma", sans-serif;
       font-style: normal;
-      font-weight: normal;
+      font-weight: 300;
       font-size: 16px;
       line-height: 26px;
       word-break: break-word;
@@ -596,7 +596,7 @@ template {
     .features__description {
       font-family: "Roboto", "Arial", "Tahoma", sans-serif;
       font-style: normal;
-      font-weight: normal;
+      font-weight: 300;
       font-size: 16px;
       line-height: 26px;
       word-break: break-word;
@@ -637,7 +637,7 @@ template {
       .features__item--second {
         font-family: "Roboto", "Arial", "Tahoma", sans-serif;
         font-style: normal;
-        font-weight: 300;
+        font-weight: 400;
         font-size: 16px;
         line-height: 24px;
         word-break: break-word;
@@ -648,7 +648,7 @@ template {
       .features__item--third {
         font-family: "Roboto", "Arial", "Tahoma", sans-serif;
         font-style: normal;
-        font-weight: 300;
+        font-weight: 400;
         font-size: 16px;
         line-height: 24px;
         word-break: break-word;
@@ -659,7 +659,7 @@ template {
       .features__item--fourth {
         font-family: "Roboto", "Arial", "Tahoma", sans-serif;
         font-style: normal;
-        font-weight: 300;
+        font-weight: 400;
         font-size: 16px;
         line-height: 24px;
         word-break: break-word;
@@ -720,7 +720,7 @@ template {
     .services__description {
       font-family: "Roboto", "Arial", "Tahoma", sans-serif;
       font-style: normal;
-      font-weight: normal;
+      font-weight: 300;
       font-size: 16px;
       line-height: 26px;
       word-break: break-word; } }
@@ -794,7 +794,7 @@ template {
     .services__item-description {
       font-family: "Roboto", "Arial", "Tahoma", sans-serif;
       font-style: normal;
-      font-weight: normal;
+      font-weight: 300;
       font-size: 16px;
       line-height: 26px;
       word-break: break-word;
@@ -1033,8 +1033,11 @@ template {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #181617;
+  background-color: #151313;
   padding: 27px 15px 19px 15px; }
+  @media (min-width: 768px) {
+    .team {
+      padding: 53px 45px 91px 45px; } }
 
 .team__title {
   font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
@@ -1045,6 +1048,16 @@ template {
   word-break: break-word;
   color: #FFFFFF;
   text-align: center; }
+  @media (min-width: 768px) {
+    .team__title {
+      font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 36px;
+      line-height: 42px;
+      word-break: break-word;
+      color: #FFFFFF;
+      margin: 30px 20px 24px 19px; } }
 
 .team__description {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
@@ -1056,6 +1069,15 @@ template {
   color: #A07B50;
   text-align: center;
   margin: 0 20px; }
+  @media (min-width: 768px) {
+    .team__description {
+      font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      word-break: break-word;
+      margin: 0 80px; } }
 
 .team-gallery__name {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
@@ -1083,13 +1105,28 @@ template {
   line-height: 20px;
   word-break: break-word;
   color: #FFFFFF; }
+  @media (min-width: 768px) {
+    .team-gallery__description {
+      font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      word-break: break-word; } }
 
 .team-gallery__social-list {
   list-style: none; }
 
+@media (min-width: 768px) {
+  .team-gallery {
+    align-self: flex-start; } }
+
 .team-gallery__photos-wrapper {
   position: relative;
   margin: 35px 0 41px; }
+  @media (min-width: 768px) {
+    .team-gallery__photos-wrapper {
+      margin: 29px 0 41px; } }
 
 .team-gallery__photo-block {
   position: absolute;
@@ -1097,6 +1134,12 @@ template {
   left: 50%;
   transform: translateX(-50%);
   padding: 0 31px; }
+  @media (min-width: 768px) {
+    .team-gallery__photo-block {
+      top: 296px;
+      left: 98%;
+      transform: translateX(-99%);
+      padding: 0 45px; } }
 
 .team-gallery__photo {
   display: block;
@@ -1106,9 +1149,19 @@ template {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
   margin: 98px 0 0 0;
   padding: 84px 0 12px 0;
   background-color: #1F1C1D; }
+  @media (min-width: 768px) {
+    .team-gallery__photo-info {
+      align-items: flex-start;
+      border: 25px solid #151313;
+      margin: 0;
+      max-width: 649px;
+      padding: 68px 95px 72px 106px;
+      outline: 1px solid rgba(145, 131, 115, 0.4);
+      row-gap: 7px; } }
 
 .team-gallery__name {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
@@ -1119,9 +1172,26 @@ template {
   word-break: break-word;
   font-weight: 500;
   color: #A07B50; }
+  @media (min-width: 768px) {
+    .team-gallery__name {
+      font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      word-break: break-word; } }
 
 .team-gallery__position {
   color: #A07B50; }
+  @media (min-width: 768px) {
+    .team-gallery__position {
+      font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      word-break: break-word;
+      line-height: 22px; } }
 
 .team-gallery__blockquote {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
@@ -1134,6 +1204,16 @@ template {
   text-align: center;
   color: #FFFFFF;
   margin: 20px 10px; }
+  @media (min-width: 768px) {
+    .team-gallery__blockquote {
+      font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 26px;
+      word-break: break-word;
+      text-align: left;
+      margin: 16px 0 38px 0; } }
 
 .team-gallery__link {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
@@ -1163,6 +1243,9 @@ template {
   left: 0;
   transform: translateY(-50%);
   width: 100%; }
+  @media (min-width: 768px) {
+    .team-gallery__sliders {
+      top: 196px; } }
 
 .team-gallery__slider {
   background: none;

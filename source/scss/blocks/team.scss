@@ -2,12 +2,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $black;
+  background-color: $shadow-black;
   padding: 27px 15px 19px 15px;
+
+  @media (min-width: $tablet) {
+    padding: 53px 45px 91px 45px;
+  }
 }
 
 .team__title {
   @include section-title-mobile;
+
+  @media (min-width: $tablet) {
+    @include section-title;
+    margin: 30px 20px 24px 19px;
+  }
 }
 
 .team__description {
@@ -15,6 +24,11 @@
   color: $gold;
   text-align: center;
   margin: 0 20px;
+
+  @media (min-width: $tablet) {
+    @include paragraph;
+    margin: 0 80px;
+  }
 }
 
 .team-gallery__name {
@@ -30,6 +44,10 @@
 .team-gallery__description {
   @include section-paragraph-mobile;
   color: $white;
+
+  @media (min-width: $tablet) {
+    @include paragraph;
+  }
 }
 
 .team-gallery__social-list {
