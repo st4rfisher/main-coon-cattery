@@ -603,8 +603,9 @@ template {
       max-width: 450px;
       margin: 0; } }
 
-.features__photo {
-  margin: 48px 0 0 10px; }
+@media (min-width: 768px) {
+  .features__photo {
+    margin: 48px 0 0 10px; } }
 
 .features__list {
   list-style: none;
@@ -752,10 +753,16 @@ template {
     background-color: #A07B50;
     border: 15px solid #1F1C1D;
     outline: 1px solid #1F1C1D;
-    padding: 47px 0px 0px 0; }
+    padding: 15px 0 0 0; }
+  .services__item:nth-child(2) {
+    padding: 17px 0 0 0; }
+  .services__item:nth-child(3) {
+    padding: 20px 0 0 0; }
   @media (min-width: 768px) {
     .services__item {
       min-height: 307px; }
+      .services__item--colored {
+        padding: 47px 0px 0px 0; }
       .services__item:nth-child(2) {
         padding: 47px 0 0 0; }
       .services__item:nth-child(3) {
@@ -794,7 +801,8 @@ template {
   word-break: break-word;
   text-align: center;
   margin: 13px;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  margin: 12px 35px 10px 35px; }
   @media (min-width: 768px) {
     .services__item-description {
       font-family: "Roboto", "Arial", "Tahoma", sans-serif;
@@ -807,11 +815,9 @@ template {
   @media (min-width: 768px) {
     .services__item:nth-child(2) .services__item-description {
       margin: 43px 45px 33px 45px; } }
-  .services__item:nth-child(3) .services__item-description {
-    margin: 15px 20px; }
-    @media (min-width: 768px) {
-      .services__item:nth-child(3) .services__item-description {
-        margin: 33px 60px; } }
+  @media (min-width: 768px) {
+    .services__item:nth-child(3) .services__item-description {
+      margin: 33px 60px; } }
 
 .pets-care {
   display: flex;

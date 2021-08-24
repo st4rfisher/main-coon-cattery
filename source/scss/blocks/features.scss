@@ -34,7 +34,9 @@
 }
 
 .features__photo {
-  margin: 48px 0 0 10px;
+  @media (min-width: $tablet) {
+    margin: 48px 0 0 10px;
+  }
 }
 
 .features__list {
