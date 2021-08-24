@@ -525,6 +525,20 @@ template {
   color: #A07B50;
   text-align: center;
   margin: 0 8px 25px 8px; }
+  @media (min-width: 768px) {
+    .features__description {
+      font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 26px;
+      word-break: break-word;
+      max-width: 450px;
+      margin: 0; } }
+
+@media (min-width: 768px) {
+  .features__photo {
+    margin: 48px 0 0 10px; } }
 
 .features__list {
   list-style: none;
@@ -596,6 +610,24 @@ template {
   min-height: 248px;
   box-sizing: border-box;
   background-color: #1F1C1D; }
+  .services__item--colored {
+    background-color: #A07B50;
+    border: 15px solid #1F1C1D;
+    outline: 1px solid #1F1C1D;
+    padding: 15px 0 0 0; }
+  .services__item:nth-child(2) {
+    padding: 17px 0 0 0; }
+  .services__item:nth-child(3) {
+    padding: 20px 0 0 0; }
+  @media (min-width: 768px) {
+    .services__item {
+      min-height: 307px; }
+      .services__item--colored {
+        padding: 47px 0px 0px 0; }
+      .services__item:nth-child(2) {
+        padding: 47px 0 0 0; }
+      .services__item:nth-child(3) {
+        padding: 45px 0 0 0; } }
 
 .services__item-block {
   min-height: 218px;
@@ -609,11 +641,15 @@ template {
     padding: 39px 0 0 0;
     fill: #FFFFFF; }
   .services__item:nth-child(2) .services__icon {
-    height: 70px;
-    padding: 15px 0 0 0; }
+    height: 70px; }
+    @media (min-width: 768px) {
+      .services__item:nth-child(2) .services__icon {
+        height: 95px; } }
   .services__item:nth-child(3) .services__icon {
-    height: 88px;
-    padding: 20px 0 0 0; }
+    height: 88px; }
+    @media (min-width: 768px) {
+      .services__item:nth-child(3) .services__icon {
+        height: 108px; } }
 
 .services__item-description {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
@@ -624,9 +660,11 @@ template {
   word-break: break-word;
   text-align: center;
   margin: 13px;
-  color: #FFFFFF; }
-  .services__item:nth-child(3) .services__item-description {
-    margin: 15px 20px; }
+  color: #FFFFFF;
+  margin: 12px 35px 10px 35px; }
+  @media (min-width: 768px) {
+    .services__item:nth-child(3) .services__item-description {
+      margin: 33px 60px; } }
 
 .pets-care {
   display: flex;
