@@ -22,10 +22,11 @@
   flex-wrap: wrap;
   margin: 98px 0 0 0;
   padding: 143px 0 35px;
-  background-color: $asphalt;
+  background-color: $shadow-black;
   justify-content: center;
   align-items: center;
   column-gap: 38px;
+  max-width: 578px;
 }
 
 .reviews-gallery__name {
@@ -33,7 +34,11 @@
   font-weight: 500;
   color: $white;
   text-align: center;
-  flex-grow: 1;
+
+  @media (min-width: $tablet) {
+    @include gallery-text;
+    margin: 36px 0 0 22px;
+  }
 }
 
 .reviews-gallery__blockquote {
@@ -42,7 +47,6 @@
   text-align: center;
   color: $white;
   margin: 15px 30px 17px 30px;
-  flex-grow: 1;
 }
 
 .reviews-gallery__link {

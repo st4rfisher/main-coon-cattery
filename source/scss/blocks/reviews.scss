@@ -2,12 +2,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $black;
-  padding: 13px 15px 20px 15px
-}
+  background-color: $asphalt;
+  padding: 13px 15px 20px 15px;
 
+  @media (min-width: $tablet) {
+    padding: 26px 15px 20px 31px;
+  }
+}
 
 .reviews__title {
   @include section-title-mobile;
   margin: 19px 0 10px 0px;
+
+  @media (min-width: $tablet) {
+    @include section-title;
+    margin: 19px 0 16px 0;
+  }
 }

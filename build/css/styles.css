@@ -1282,7 +1282,7 @@ template {
   padding: 30px 15px 20px 15px; }
   @media (min-width: 768px) {
     .questions-answers {
-      padding: 105px 55px 20px; } }
+      padding: 105px 55px 35px 55px; } }
 
 .questions-answers__title {
   font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
@@ -1457,8 +1457,11 @@ template {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #181617;
+  background-color: #1F1C1D;
   padding: 13px 15px 20px 15px; }
+  @media (min-width: 768px) {
+    .reviews {
+      padding: 26px 15px 20px 31px; } }
 
 .reviews__title {
   font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
@@ -1470,6 +1473,16 @@ template {
   color: #FFFFFF;
   text-align: center;
   margin: 19px 0 10px 0px; }
+  @media (min-width: 768px) {
+    .reviews__title {
+      font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 36px;
+      line-height: 42px;
+      word-break: break-word;
+      color: #FFFFFF;
+      margin: 19px 0 16px 0; } }
 
 .reviews-gallery__photos-wrapper {
   position: relative;
@@ -1491,11 +1504,12 @@ template {
   flex-wrap: wrap;
   margin: 98px 0 0 0;
   padding: 143px 0 35px;
-  background-color: #1F1C1D;
+  background-color: #151313;
   justify-content: center;
   align-items: center;
   -moz-column-gap: 38px;
-       column-gap: 38px; }
+       column-gap: 38px;
+  max-width: 578px; }
 
 .reviews-gallery__name {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
@@ -1506,8 +1520,16 @@ template {
   word-break: break-word;
   font-weight: 500;
   color: #FFFFFF;
-  text-align: center;
-  flex-grow: 1; }
+  text-align: center; }
+  @media (min-width: 768px) {
+    .reviews-gallery__name {
+      font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      word-break: break-word;
+      margin: 36px 0 0 22px; } }
 
 .reviews-gallery__blockquote {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
@@ -1519,8 +1541,7 @@ template {
   opacity: 0.72;
   text-align: center;
   color: #FFFFFF;
-  margin: 15px 30px 17px 30px;
-  flex-grow: 1; }
+  margin: 15px 30px 17px 30px; }
 
 .reviews-gallery__link {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
