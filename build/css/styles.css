@@ -419,7 +419,7 @@ template {
     .header__city {
       font-family: "Roboto", "Arial", "Tahoma", sans-serif;
       font-style: normal;
-      font-weight: 400;
+      font-weight: 300;
       font-size: 16px;
       line-height: 24px;
       word-break: break-word; } }
@@ -459,7 +459,7 @@ template {
     .header__description {
       font-family: "Roboto", "Arial", "Tahoma", sans-serif;
       font-style: normal;
-      font-weight: 400;
+      font-weight: 300;
       font-size: 16px;
       line-height: 24px;
       word-break: break-word;
@@ -638,7 +638,7 @@ template {
       .features__item--second {
         font-family: "Roboto", "Arial", "Tahoma", sans-serif;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 300;
         font-size: 16px;
         line-height: 24px;
         word-break: break-word;
@@ -649,7 +649,7 @@ template {
       .features__item--third {
         font-family: "Roboto", "Arial", "Tahoma", sans-serif;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 300;
         font-size: 16px;
         line-height: 24px;
         word-break: break-word;
@@ -660,7 +660,7 @@ template {
       .features__item--fourth {
         font-family: "Roboto", "Arial", "Tahoma", sans-serif;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 300;
         font-size: 16px;
         line-height: 24px;
         word-break: break-word;
@@ -1048,7 +1048,7 @@ template {
   padding: 27px 15px 19px 15px; }
   @media (min-width: 768px) {
     .team {
-      padding: 53px 45px 91px 45px; } }
+      padding: 53px 45px 152px 45px; } }
 
 .team__title {
   font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
@@ -1068,7 +1068,7 @@ template {
       line-height: 42px;
       word-break: break-word;
       color: #FFFFFF;
-      margin: 30px 20px 24px 19px; } }
+      margin: 30px 20px 21px 19px; } }
 
 .team__description {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
@@ -1084,7 +1084,7 @@ template {
     .team__description {
       font-family: "Roboto", "Arial", "Tahoma", sans-serif;
       font-style: normal;
-      font-weight: 400;
+      font-weight: 300;
       font-size: 16px;
       line-height: 24px;
       word-break: break-word;
@@ -1120,7 +1120,7 @@ template {
     .team-gallery__description {
       font-family: "Roboto", "Arial", "Tahoma", sans-serif;
       font-style: normal;
-      font-weight: 400;
+      font-weight: 300;
       font-size: 16px;
       line-height: 24px;
       word-break: break-word; } }
@@ -1163,7 +1163,7 @@ template {
   box-sizing: border-box;
   margin: 98px 0 0 0;
   padding: 84px 0 12px 0;
-  background-color: #1F1C1D; }
+  background-color: #181617; }
   @media (min-width: 768px) {
     .team-gallery__photo-info {
       align-items: flex-start;
@@ -1198,7 +1198,7 @@ template {
     .team-gallery__position {
       font-family: "Roboto", "Arial", "Tahoma", sans-serif;
       font-style: normal;
-      font-weight: 400;
+      font-weight: 300;
       font-size: 16px;
       line-height: 24px;
       word-break: break-word;
@@ -1280,6 +1280,9 @@ template {
   align-items: center;
   background-color: #1F1C1D;
   padding: 30px 15px 20px 15px; }
+  @media (min-width: 768px) {
+    .questions-answers {
+      padding: 105px 55px 20px; } }
 
 .questions-answers__title {
   font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
@@ -1290,6 +1293,16 @@ template {
   word-break: break-word;
   color: #FFFFFF;
   text-align: center; }
+  @media (min-width: 768px) {
+    .questions-answers__title {
+      font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 36px;
+      line-height: 42px;
+      word-break: break-word;
+      color: #FFFFFF;
+      margin: 30px 10px 18px 0px; } }
 
 .questions-answers__description {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
@@ -1301,20 +1314,72 @@ template {
   color: #A07B50;
   text-align: center;
   margin: 0px 32px; }
+  @media (min-width: 768px) {
+    .questions-answers__description {
+      font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 26px;
+      word-break: break-word; } }
 
 .questions-answers__list {
+  display: flex;
+  flex-direction: column;
   list-style: none;
   color: #FFFFFF;
-  margin: 5px 0 0;
-  padding: 0; }
+  margin: 5px 0 0 0;
+  padding: 0;
+  row-gap: 23px; }
+  @media (min-width: 768px) {
+    .questions-answers__list {
+      margin: 54px 0 0 105px; } }
 
 .questions-answers__item {
-  margin: 30px 0 0 0; }
+  position: relative; }
+  .questions-answers__item--first::before {
+    position: absolute;
+    top: 19px;
+    left: -79px;
+    content: "";
+    width: 59px;
+    height: 47px;
+    background-image: url("../img/icons/01-icon.svg");
+    background-repeat: no-repeat; }
+  .questions-answers__item--second::before {
+    position: absolute;
+    top: 19px;
+    left: -79px;
+    content: "";
+    width: 59px;
+    height: 47px;
+    background-image: url("../img/icons/02-icon.svg");
+    background-repeat: no-repeat; }
+  .questions-answers__item--third::before {
+    position: absolute;
+    top: 19px;
+    left: -79px;
+    content: "";
+    width: 59px;
+    height: 47px;
+    background-image: url("../img/icons/03-icon.svg");
+    background-repeat: no-repeat; }
+  .questions-answers__item--fourth::before {
+    position: absolute;
+    top: 19px;
+    left: -79px;
+    content: "";
+    width: 59px;
+    height: 47px;
+    background-image: url("../img/icons/04-icon.svg");
+    background-repeat: no-repeat; }
 
 .questions-answers__item-block {
   display: flex; }
 
 .questions-answers__question {
+  display: flex;
+  align-items: center;
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 200;
@@ -1327,33 +1392,66 @@ template {
   margin: 0;
   padding: 9px 14px 10px 13px;
   letter-spacing: 0.01em; }
+  @media (min-width: 768px) {
+    .questions-answers__question {
+      position: relative;
+      font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      word-break: break-word;
+      text-decoration: none;
+      color: #FFFFFF;
+      padding: 10px 75px 10px 26px; } }
+  .questions-answers__item--first .questions-answers__question {
+    padding: 14px 85px 10px 28px; }
 
 .questions-answers__answer {
-  font-family: "Roboto", "Arial", "Tahoma", sans-serif;
-  font-style: normal;
-  font-weight: 200;
-  font-size: 14px;
-  line-height: 20px;
-  word-break: break-word;
   display: none;
   border-left: 1px solid #544332;
   border-bottom: 1px solid #544332;
   border-right: 1px solid #544332;
   padding: 9px 14px 5px 13px;
   box-sizing: border-box; }
+  @media (min-width: 768px) {
+    .questions-answers__answer {
+      padding: 25px 140px 4px 28px; } }
   .questions-answers__answer--show {
     display: block; }
 
 .questions-answers__paragraph {
+  font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 20px;
+  word-break: break-word;
   margin: 0 0 5px 0; }
+  @media (min-width: 768px) {
+    .questions-answers__paragraph {
+      font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 24px;
+      word-break: break-word;
+      line-height: 25px;
+      margin: 0 0 21px; } }
 
 .questions-answers__button {
   border: 1px solid #A07B50;
   background: none;
   padding: 10px 12px 5px 13px; }
+  @media (min-width: 768px) {
+    .questions-answers__button {
+      padding: 32px 26px 25px 28px; } }
   .questions-answers__button--active {
     background-color: #A07B50;
     fill: red; }
+    @media (min-width: 768px) {
+      .questions-answers__button--active {
+        padding: 29px 27px 25px 28px; } }
 
 .reviews {
   display: flex;

@@ -4,10 +4,19 @@
   align-items: center;
   background-color: $asphalt;
   padding: 30px 15px 20px 15px;
+
+  @media (min-width: $tablet) {
+    padding: 105px 55px 20px
+  }
 }
 
 .questions-answers__title {
   @include section-title-mobile;
+
+  @media (min-width: $tablet) {
+    @include section-title;
+    margin: 30px 10px 18px 0px;
+  }
 }
 
 .questions-answers__description {
@@ -15,17 +24,71 @@
   color: $gold;
   text-align: center;
   margin: 0px 32px;
+
+  @media (min-width: $tablet) {
+    @include section-paragraph;
+  }
 }
 
 .questions-answers__list {
+  display: flex;
+  flex-direction: column;
   list-style: none;
   color: $white;
-  margin: 5px 0 0;
+  margin: 5px 0 0 0;
   padding: 0;
+  row-gap: 23px;
+  @media (min-width: $tablet) {
+    margin: 54px 0 0 105px;
+  }
 }
 
 .questions-answers__item {
-  margin: 30px 0 0 0;
+  position: relative;
+
+  &--first::before {
+    position: absolute;
+    top: 19px;
+    left: -79px;
+    content: "";
+    width: 59px;
+    height: 47px;
+    background-image: url("../img/icons/01-icon.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--second::before {
+    position: absolute;
+    top: 19px;
+    left: -79px;
+    content: "";
+    width: 59px;
+    height: 47px;
+    background-image: url("../img/icons/02-icon.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--third::before {
+    position: absolute;
+    top: 19px;
+    left: -79px;
+    content: "";
+    width: 59px;
+    height: 47px;
+    background-image: url("../img/icons/03-icon.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--fourth::before {
+    position: absolute;
+    top: 19px;
+    left: -79px;
+    content: "";
+    width: 59px;
+    height: 47px;
+    background-image: url("../img/icons/04-icon.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .questions-answers__item-block {
@@ -33,6 +96,8 @@
 }
 
 .questions-answers__question {
+  display: flex;
+  align-items: center;
   @include section-paragraph-mobile;
   flex-grow: 1;
   font-style: 500;
@@ -40,10 +105,27 @@
   margin: 0;
   padding: 9px 14px 10px 13px;
   letter-spacing: 0.01em;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    @include button-text;
+    padding: 10px 75px 10px 26px;
+  }
+
+  .questions-answers__item--first & {
+    padding: 14px 85px 10px 28px;
+  }
+
+  // .questions-answers__item--second & {
+
+  // }
+
+  // .questions-answers__item--third & {
+  //   padding: 10px 85px 10px 23px;
+  // }
 }
 
 .questions-answers__answer {
-  @include section-paragraph-mobile;
   display: none;
   border-left: 1px solid $brown;
   border-bottom: 1px solid $brown;
@@ -51,13 +133,24 @@
   padding: 9px 14px 5px 13px;
   box-sizing: border-box;
 
+  @media (min-width: $tablet) {
+    padding: 25px 140px 4px 28px;
+  }
+
   &--show {
     display: block;
   }
 }
 
 .questions-answers__paragraph {
+  @include section-paragraph-mobile;
   margin: 0 0 5px 0;
+
+  @media (min-width: $tablet) {
+    @include paragraph;
+    line-height: 25px;
+    margin: 0 0 21px;
+  }
 }
 
 .questions-answers__button {
@@ -65,8 +158,16 @@
   background: none;
   padding: 10px 12px 5px 13px;
 
+  @media (min-width: $tablet) {
+    padding: 32px 26px 25px 28px;
+  }
+
   &--active {
     background-color: $gold;
     fill: red;
+
+    @media (min-width: $tablet) {
+      padding: 29px 27px 25px 28px;
+    }
   }
 }
