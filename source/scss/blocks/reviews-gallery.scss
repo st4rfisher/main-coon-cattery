@@ -5,11 +5,14 @@
 
 .reviews-gallery__photo-block {
   position: absolute;
-  top: -63px;
+  top: -95px;
   left: 50%;
   transform: translateX(-50%);
   padding: 0 31px;
 
+  @media (min-width: $tablet) {
+    padding: 0 90px;
+  }
 }
 
 .reviews-gallery__photo {
@@ -20,13 +23,19 @@
 .reviews-gallery__photo-info {
   display: flex;
   flex-wrap: wrap;
-  margin: 98px 0 0 0;
-  padding: 143px 0 35px;
+  box-sizing: border-box;
+  margin: 129px 0 0 0;
+  padding: 110px 0 35px;
   background-color: $shadow-black;
   justify-content: center;
   align-items: center;
   column-gap: 38px;
   max-width: 578px;
+
+  @media (min-width: $tablet) {
+    margin: 130px 0 0;
+    padding: 147px 0 30px 23px;
+  }
 }
 
 .reviews-gallery__name {
@@ -35,9 +44,10 @@
   color: $white;
   text-align: center;
 
+
   @media (min-width: $tablet) {
     @include gallery-text;
-    margin: 36px 0 0 22px;
+     //margin: 36px 0 0 24px;
   }
 }
 
@@ -47,6 +57,12 @@
   text-align: center;
   color: $white;
   margin: 15px 30px 17px 30px;
+
+
+  @media (min-width: $tablet) {
+    margin: 14px 111px 26px;
+    line-height: 22px;
+  }
 }
 
 .reviews-gallery__link {
@@ -61,6 +77,10 @@
   left: 0;
   transform: translateY(-50%);
   width: 100%;
+
+  @media (min-width: $tablet) {
+    top: 141px;
+  }
 }
 
 .reviews-gallery__slider {
@@ -70,6 +90,26 @@
   padding: 0;
   stroke: $gold;
   stroke-width:5;
+  width: 8px;
+  height: 18px;
+
+  &--left {
+    background-image: url("../img/icons/arrow-left-icon.svg");
+    @media (min-width: $tablet) {
+      width: 59px;
+      height: 16px;
+      background-image: url("../img/icons/arrow-left-tablet-icon.svg");
+    }
+  }
+
+  &--right {
+    background-image: url("../img/icons/arrow-right-icon.svg");
+    @media (min-width: $tablet) {
+      width: 59px;
+      height: 16px;
+      background-image: url("../img/icons/arrow-right-tablet-icon.svg");
+    }
+  }
 }
 
 .reviews-gallery__social-list {
@@ -87,7 +127,6 @@
 }
 
 .reviews-gallery__date {
-  flex-shrink: 1;
   align-self: center;
   order: 3;
   @include link-text-mobile;

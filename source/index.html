@@ -42,6 +42,23 @@
           <h1 class="header__title">Питомник Мейн-Кунов</h1>
           <p class="header__description" >Первый питомник с расширенным спектром услуг</p>
           <a class="header__link" href="#">Смотреть котиков</a>
+          <ul class="header__social-list">
+            <li class="header__item">
+              <svg class="header__icon" width="13" height="8">
+                <use xlink:href="img/icons/sprite.svg#vk-icon"></use>
+              </svg>
+            </li>
+            <li class="header__item">
+              <svg class="header__icon" width="15" height="10">
+                <use xlink:href="img/icons/sprite.svg#twitter-icon"></use>
+              </svg>
+            </li>
+            <li class="header__item">
+              <svg class="header__icon" width="5" height="11">
+                <use xlink:href="img/icons/sprite.svg#facebook-icon"></use>
+              </svg>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
@@ -92,7 +109,7 @@
                       <source type="image/webp" srcset="img/cat-4-mobile@1x.webp 1x, img/cat-4-mobile@2x.webp 2x">
                       <source media="(min-width: 1366px)" srcset="img/cat-4-desktop@1x.jpg 1x, img/cat-4-desktop@2x.jpg 2x">
                       <source media="(min-width: 768px)" srcset="img/cat-4-tablet@1x.jpg 1x, img/cat-4-tablet@2x.jpg 2x">
-                      <img class="pets-gallery__photo" src="img/cat-4-mobile@1x.jpg" srcset="img/cat-4-mobile@2x.jpg 2x" alt="Фото кота">
+                      <img class="pets-gallery__photo" src="img/cat-4-mobile@1x.jpg" srcset="img/cat-4-mobile@2x.jpg 2x" alt="Фото">
                     </picture>
                   </li>
                 </ul>
@@ -241,7 +258,7 @@
                   <source type="image/webp" srcset="img/photo-1-mobile@1x.webp 1x, img/photo-1-mobile@2x.webp 2x">
                   <source media="(min-width: 1366px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
-                  <img class="team-gallery__photo" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Сергей Попов">
+                  <img class="team-gallery__photo" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Фото">
                 </picture>
                 <div class="team-gallery__sliders">
                   <button class="team-gallery__slider team-gallery__slider--left">
@@ -357,29 +374,25 @@
                   <source type="image/webp" srcset="img/photo-2-mobile@1x.webp 1x, img/photo-2-mobile@2x.webp 2x">
                   <source media="(min-width: 1366px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
-                  <img class="team-gallery__photo" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Сергей Попов">
+                  <img class="reviews-gallery__photo" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Фото">
                 </picture>
                 <div class="reviews-gallery__sliders">
-                  <button class="reviews-gallery__slider team-gallery__slider--left">
-                    <svg class="reviews-gallery__arrow" width="22" height="45">
-                      <use xlink:href="img/icons/sprite.svg#arrow-left-icon"></use>
-                    </svg>
-                  </button>
-                  <button class="reviews-gallery__slider team-gallery__slider--right">
-                    <svg class="reviews-gallery__arrow" width="22" height="45">
-                      <use xlink:href="img/icons/sprite.svg#arrow-right-icon"></use>
-                    </svg>
-                  </button>
+                  <button class="reviews-gallery__slider reviews-gallery__slider--left"></button>
+                  <button class="reviews-gallery__slider reviews-gallery__slider--right"></button>
                 </div>
               </div>
               <div class="reviews-gallery__photo-info">
                 <span class="reviews-gallery__name">Василиса Лазарева</span>
                 <p class="reviews-gallery__blockquote">
-                  Я выражаю огромную благодарность вашему питомнику. Мой Феликс невероятно умен
-                  и воспитан. Огромным плюсом питомника является возможность консультироваться в любое время
+
+                          Я выражаю огромную благодарность
+                      вашему питомнику. Мой Феликс невероятно
+                      умен и воспитан. Огромным плюсом питомника
+                    является возможность консультироваться в любое время
+
                 </p>
                 <ul class="reviews-gallery__social-list">
-                  <li class="review-gallery__item">
+                  <li class="reviews-gallery__item">
                     <svg class="reviews-gallery__icon" width="28" height="28">
                       <use xlink:href="img/icons/sprite.svg#review-twitter-icon"></use>
                     </svg>
