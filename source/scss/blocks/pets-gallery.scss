@@ -39,7 +39,9 @@
   padding: 0px 28px;
 
   @media (min-width: $tablet) {
-    margin: 25px 0 50px;
+    margin: 25px auto 50px auto;
+    max-width: 723px;
+    padding: 0;
   }
 }
 

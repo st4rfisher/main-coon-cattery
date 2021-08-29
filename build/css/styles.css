@@ -628,7 +628,8 @@ template {
   @media (min-width: 768px) {
     .features__list {
       position: relative;
-      width: 100%; } }
+      width: 100%;
+      max-width: 737px; } }
 
 .features__item {
   position: relative;
@@ -994,7 +995,9 @@ template {
   padding: 0px 28px; }
   @media (min-width: 768px) {
     .pets-gallery__photos-wrapper {
-      margin: 25px 0 50px; } }
+      margin: 25px auto 50px auto;
+      max-width: 723px;
+      padding: 0; } }
 
 .pets-gallery__photos {
   list-style: none; }
