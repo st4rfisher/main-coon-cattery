@@ -11,6 +11,21 @@
 
   @media (min-width: $tablet) {
     padding: 59px 99px 99px 113px;
+
+    background-image: url("../img/background-cat-tablet@1x.jpg");
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/background-cat-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding: 53px 105px 99px 104px;
+    background-image: url("../img/background-cat-desktop@1x.jpg");
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/background-cat-desktop@2x.jpg");
+    }
   }
 }
 
@@ -21,6 +36,10 @@
   @media (min-width: $tablet) {
     @include section-title;
     margin: 28px 44px 40px 27px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 28px 45px 50px 45px
   }
 }
 
@@ -36,6 +55,14 @@
   @media (min-width: $tablet) {
     row-gap: 23px;
   }
+
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    //grid-template-rows: min-content min-content;
+    column-gap: 45px;
+    row-gap: 42px;
+  }
 }
 
 .pets-care__item {
@@ -45,6 +72,24 @@
   width: 100%;
   height: auto;
   border: 1px solid $gold;
+
+  @media (min-width: $desktop) {
+    &--wool {
+      order: 1;
+    }
+
+    &--ears-eyes {
+      order: 3;
+    }
+
+    &--claws {
+      order: 2;
+    }
+
+    &--feed {
+      order: 4;
+    }
+  }
 }
 
 .pets-care__item-info {
@@ -67,6 +112,25 @@
       padding: 35px 45px 27px 48px;
     }
   }
+
+  @media (min-width: $desktop) {
+    &--wool {
+      padding: 36px 45px 46px 58px;
+    }
+
+    &--ears-eyes {
+      padding: 33px 45px 25px 57px;
+    }
+
+    &--claws {
+      padding: 36px 45px 45px 56px;
+    }
+
+    &--feed {
+      padding: 35px 45px 24px 57px;
+    }
+  }
+
 }
 
 .pets-care__item-title {
