@@ -10,7 +10,7 @@
   }
 
   @media (min-width: $desktop) {
-    padding: 41px 15px 67px 39px;
+    padding: 41px 15px 76px 39px;
   }
 }
 
@@ -60,6 +60,10 @@
     position: relative;
     width: 100%;
     max-width: 737px;
+  }
+
+  @media (min-width: $tablet) {
+    height: 0;
   }
 }
 
@@ -121,7 +125,6 @@
 
   @media (min-width: $desktop) {
     position: relative;
-    width: 100%;
     max-width: 737px;
 
     &--first {

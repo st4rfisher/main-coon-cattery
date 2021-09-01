@@ -646,7 +646,7 @@ template {
       padding: 50px 15px 67px; } }
   @media (min-width: 1366px) {
     .features {
-      padding: 41px 15px 67px 39px; } }
+      padding: 41px 15px 76px 39px; } }
 
 .features__title {
   font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
@@ -710,6 +710,9 @@ template {
       position: relative;
       width: 100%;
       max-width: 737px; } }
+  @media (min-width: 768px) {
+    .features__list {
+      height: 0; } }
 
 .features__item {
   position: relative;
@@ -777,7 +780,6 @@ template {
   @media (min-width: 1366px) {
     .features__item {
       position: relative;
-      width: 100%;
       max-width: 737px; }
       .features__item--first {
         top: -528px;
