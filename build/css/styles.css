@@ -804,6 +804,9 @@ template {
   @media (min-width: 768px) {
     .services {
       padding: 59px 20px 101px 15px; } }
+  @media (min-width: 1366px) {
+    .services {
+      padding: 58px 20px 98px 20px; } }
 
 .services__sub-title {
   font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
@@ -824,6 +827,9 @@ template {
       line-height: 42px;
       word-break: break-word;
       color: #FFFFFF; } }
+  @media (min-width: 1366px) {
+    .services__sub-title {
+      margin: 23px 0 21px 0px; } }
 
 .services__description {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
@@ -856,6 +862,13 @@ template {
     .services__list {
       padding: 43px 0 0 0;
       row-gap: 45px; } }
+  @media (min-width: 1366px) {
+    .services__list {
+      flex-direction: row;
+      justify-content: center;
+      padding: 31px 0 0;
+      -moz-column-gap: 28px;
+           column-gap: 28px; } }
 
 .services__item {
   display: flex;
@@ -878,12 +891,15 @@ template {
   @media (min-width: 768px) {
     .services__item {
       min-height: 307px; }
-      .services__item--colored {
-        padding: 47px 0px 0px 0; }
-      .services__item:nth-child(2) {
+      .services__item--colored, .services__item:nth-child(2) {
         padding: 47px 0 0 0; }
       .services__item:nth-child(3) {
         padding: 45px 0 0 0; } }
+  @media (min-width: 1366px) {
+    .services__item {
+      min-height: 301px; }
+      .services__item--colored, .services__item:nth-child(2), .services__item:nth-child(3) {
+        padding: 53px 0 0 0; } }
 
 .services__item-block {
   min-height: 218px;

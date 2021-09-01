@@ -5,6 +5,10 @@
   @media (min-width: $tablet) {
     padding: 59px 20px 101px 15px;
   }
+
+  @media (min-width: $desktop) {
+    padding: 58px 20px 98px 20px;
+  }
 }
 
 .services__sub-title {
@@ -13,6 +17,10 @@
 
   @media (min-width: $tablet) {
     @include section-title;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 23px 0 21px 0px;
   }
 }
 
@@ -39,6 +47,13 @@
   @media (min-width: $tablet) {
     padding: 43px 0 0 0;
     row-gap: 45px;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: row;
+    justify-content: center;
+    padding: 31px 0 0;
+    column-gap: 28px;
   }
 }
 
@@ -70,16 +85,23 @@
   @media (min-width: $tablet) {
     min-height: 307px;
 
-    &--colored {
-      padding: 47px 0px 0px 0
-    }
-
+    &--colored,
     &:nth-child(2) {
-      padding: 47px 0 0 0;
+      padding: 47px 0 0 0
     }
 
     &:nth-child(3) {
       padding: 45px 0 0 0;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    min-height: 301px;
+
+    &--colored,
+    &:nth-child(2),
+    &:nth-child(3) {
+      padding: 53px 0 0 0
     }
   }
 }
