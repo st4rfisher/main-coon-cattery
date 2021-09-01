@@ -1,9 +1,19 @@
+.main {
+  background-color: $smoky-white;
+}
+
 .main__container {
   padding: 40px 0 0 0;
   background-color: $asphalt;
+  max-width: $desktop;
+  margin: 0 auto;
+  max-width: $desktop;
 
   @media (min-width: $tablet) {
     padding: 85px 0 0 0;
   }
 
+  @media (min-width: $desktop) {
+    padding: 208px 0 0 0;
+  }
 }

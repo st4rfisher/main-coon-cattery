@@ -22,6 +22,7 @@
 
   @media (min-width: $tablet) {
     @include section-paragraph;
-    max-width: 530px;
+    max-width: 516px;
+    margin: 14px 0 15px 0;
   }
 }

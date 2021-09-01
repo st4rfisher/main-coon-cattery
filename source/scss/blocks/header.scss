@@ -1,13 +1,15 @@
 .header {
-  background-color: $black;
+  background-color: $smoky-white;
 }
 
 .header__container {
+  box-sizing: border-box;
   padding: 27px 15px 27px 15px;
   background-image: url("../img/cat-1-mobile@1x.png");
+  background-color: $black;
   background-repeat: no-repeat;
   background-position: 100% 100%;
-  max-width: 1366px;
+  max-width: $desktop;
   margin: 0 auto;
 
   @media (min-resolution: 1.5dppx) {
@@ -61,11 +63,15 @@
 }
 
 .header__phone {
+  display: none;
   @include button-text;
   color: $white;
   text-decoration: none;
 
-  margin-left: auto;
+  @media (min-width: $desktop) {
+    display: block;
+    margin-left: auto;
+  }
 }
 
 .header__content {
@@ -155,10 +161,11 @@
   @media (min-width: $desktop) {
     position: relative;
     column-gap: 0;
-    margin: 43px 0 0 11px;
     row-gap: 8px;
     grid-column: 1 / 2;
     flex-direction: column;
+    align-items: center;
+    margin: 43px 0 0 10px;
 
     &::before {
       position: absolute;

@@ -5,9 +5,12 @@
   background-color: $asphalt;
   padding: 30px 15px 54px 15px;
 
-
   @media (min-width: $tablet) {
     padding: 50px 15px 67px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 41px 15px 67px 39px;
   }
 }
 
@@ -31,11 +34,19 @@
     max-width: 450px;
     margin: 0;
   }
+
+  @media (min-width: $desktop) {
+    max-width: 761px;
+  }
 }
 
 .features__photo {
   @media (min-width: $tablet) {
     margin: 48px 0 0 10px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 16px 0 0 33px;
   }
 }
 
@@ -56,6 +67,21 @@
   position: relative;
   @include paragraph-mobile;
   margin: 20px 0 0 0;
+
+  &:before {
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: -18px;
+    width: 8px;
+    height: 8px;
+    background-color: $gold;
+    border-radius: 50%;
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
+  }
 
   @media (min-width: $tablet) {
     position: absolute;
@@ -93,20 +119,33 @@
     }
   }
 
+  @media (min-width: $desktop) {
+    position: relative;
+    width: 100%;
+    max-width: 737px;
 
+    &--first {
+      top: -528px;
+      left: -166px;
+      max-width: 240px;
+    }
 
-  &:before {
-    position: absolute;
-    content: '';
-    top: 5px;
-    left: -18px;
-    width: 8px;
-    height: 8px;
-    background-color: $gold;
-    border-radius: 50%;
+    &--second {
+      top: -460px;
+      right: -709px;
+      max-width: 190px;
+    }
 
-    @media (min-width: $tablet) {
-      display: none;
+    &--third {
+      top: -288px;
+      right: -672px;
+      max-width: 170px;
+    }
+
+    &--fourth {
+      top: -380px;
+      left: -132px;
+      max-width: 190px;
     }
   }
 }
