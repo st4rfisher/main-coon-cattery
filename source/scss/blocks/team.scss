@@ -6,7 +6,7 @@
   padding: 27px 15px 19px 15px;
 
   @media (min-width: $tablet) {
-    padding: 53px 45px 152px 45px;
+    padding: 51px 45px 152px 45px;
   }
 }
 
@@ -15,7 +15,7 @@
 
   @media (min-width: $tablet) {
     @include section-title;
-    margin: 30px 20px 21px 19px;
+    margin: 30px 20px 22px 19px;
   }
 }
 
@@ -28,29 +28,6 @@
   @media (min-width: $tablet) {
     @include paragraph;
     margin: 0 80px;
+    max-width: 500px;
   }
-}
-
-.team-gallery__name {
-  @include text-mobile;
-  color: $gold;
-}
-
-.team-gallery__position {
-  @include paragraph-mobile;
-  color: $gold;
-}
-
-.team-gallery__description {
-  @include section-paragraph-mobile;
-  color: $white;
-
-  @media (min-width: $tablet) {
-    @include paragraph;
-  }
-}
-
-.team-gallery__social-list {
-  list-style: none;
-
 }

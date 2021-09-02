@@ -972,7 +972,7 @@ template {
       background-image: url("../img/background-cat-tablet@2x.jpg"); } }
   @media (min-width: 1366px) {
     .pets-care {
-      padding: 53px 105px 99px 104px;
+      padding: 53px 105px 98px 104px;
       background-image: url("../img/background-cat-desktop@1x.jpg"); } }
   @media (min-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1366px) and (min-resolution: 1.5dppx) {
     .pets-care {
@@ -1261,7 +1261,7 @@ template {
   padding: 27px 15px 19px 15px; }
   @media (min-width: 768px) {
     .team {
-      padding: 53px 45px 152px 45px; } }
+      padding: 51px 45px 152px 45px; } }
 
 .team__title {
   font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
@@ -1281,7 +1281,7 @@ template {
       line-height: 42px;
       word-break: break-word;
       color: #FFFFFF;
-      margin: 30px 20px 21px 19px; } }
+      margin: 30px 20px 22px 19px; } }
 
 .team__description {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
@@ -1301,49 +1301,16 @@ template {
       font-size: 16px;
       line-height: 24px;
       word-break: break-word;
-      margin: 0 80px; } }
-
-.team-gallery__name {
-  font-family: "Roboto", "Arial", "Tahoma", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
-  word-break: break-word;
-  color: #A07B50; }
-
-.team-gallery__position {
-  font-family: "Roboto", "Arial", "Tahoma", sans-serif;
-  font-style: normal;
-  font-weight: 200;
-  font-size: 14px;
-  line-height: 20px;
-  word-break: break-word;
-  color: #A07B50; }
-
-.team-gallery__description {
-  font-family: "Roboto", "Arial", "Tahoma", sans-serif;
-  font-style: normal;
-  font-weight: 200;
-  font-size: 14px;
-  line-height: 20px;
-  word-break: break-word;
-  color: #FFFFFF; }
-  @media (min-width: 768px) {
-    .team-gallery__description {
-      font-family: "Roboto", "Arial", "Tahoma", sans-serif;
-      font-style: normal;
-      font-weight: 300;
-      font-size: 16px;
-      line-height: 24px;
-      word-break: break-word; } }
-
-.team-gallery__social-list {
-  list-style: none; }
+      margin: 0 80px;
+      max-width: 500px; } }
 
 @media (min-width: 768px) {
   .team-gallery {
     align-self: flex-start; } }
+
+@media (min-width: 1366px) {
+  .team-gallery {
+    align-self: flex-end; } }
 
 .team-gallery__photos-wrapper {
   position: relative;
@@ -1364,6 +1331,12 @@ template {
       left: 98%;
       transform: translateX(-99%);
       padding: 0 45px; } }
+  @media (min-width: 1366px) {
+    .team-gallery__photo-block {
+      width: 100%;
+      padding: 0 553px 0 0px;
+      top: -2px;
+      left: 597px; } }
 
 .team-gallery__photo {
   display: block;

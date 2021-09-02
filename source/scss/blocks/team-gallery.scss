@@ -2,6 +2,10 @@
   @media (min-width: $tablet) {
     align-self: flex-start;
   }
+
+  @media (min-width: $desktop) {
+    align-self: flex-end;
+  }
 }
 
 .team-gallery__photos-wrapper {
@@ -25,6 +29,13 @@
     left: 98%;
     transform: translateX(-99%);
     padding: 0 45px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 100%;
+    padding: 0 553px 0 0px;
+    top: -2px;
+    left: 597px;
   }
 }
 
@@ -101,7 +112,6 @@
 
   @media (min-width: $tablet) {
     top: 196px;
-
   }
 }
 
