@@ -252,28 +252,14 @@
           </p>
           <div class="team-gallery">
             <div class="team-gallery__photos-wrapper">
-              <div class="team-gallery__photo-block">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1366px)" srcset="img/photo-1-desktop@1x.webp 1x, img/photo-1-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.webp 1x, img/photo-1-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo-1-mobile@1x.webp 1x, img/photo-1-mobile@2x.webp 2x">
-                  <source media="(min-width: 1366px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
-                  <img class="team-gallery__photo" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Фото">
-                </picture>
-                <div class="team-gallery__sliders">
-                  <button class="team-gallery__slider team-gallery__slider--left">
-                    <svg class="team-gallery__arrow" width="22" height="45">
-                      <use xlink:href="img/icons/sprite.svg#arrow-left-icon"></use>
-                    </svg>
-                  </button>
-                  <button class="team-gallery__slider team-gallery__slider--right">
-                    <svg class="team-gallery__arrow" width="22" height="45">
-                      <use xlink:href="img/icons/sprite.svg#arrow-right-icon"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
+              <picture class="team-gallery__photo">
+                <source type="image/webp" media="(min-width: 1366px)" srcset="img/photo-1-desktop@1x.webp 1x, img/photo-1-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.webp 1x, img/photo-1-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-1-mobile@1x.webp 1x, img/photo-1-mobile@2x.webp 2x">
+                <source media="(min-width: 1366px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                <img class="team-gallery__image" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Фото">
+              </picture>
               <div class="team-gallery__photo-info">
                 <span class="team-gallery__name">Серёжа Попов</span>
                 <span class="team-gallery__position">Основатель питомника</span>
@@ -298,6 +284,18 @@
                     </svg>
                   </li>
                 </ul>
+              </div>
+              <div class="team-gallery__sliders">
+                <button class="team-gallery__slider team-gallery__slider--left">
+                  <svg class="team-gallery__arrow" width="22" height="45">
+                    <use xlink:href="img/icons/sprite.svg#arrow-left-icon"></use>
+                  </svg>
+                </button>
+                <button class="team-gallery__slider team-gallery__slider--right">
+                  <svg class="team-gallery__arrow" width="22" height="45">
+                    <use xlink:href="img/icons/sprite.svg#arrow-right-icon"></use>
+                  </svg>
+                </button>
               </div>
             </div>
           </div>

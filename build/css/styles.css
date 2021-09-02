@@ -643,7 +643,7 @@ template {
   padding: 30px 15px 54px 15px; }
   @media (min-width: 768px) {
     .features {
-      padding: 50px 15px 67px; } }
+      padding: 50px 15px 78px 15px; } }
   @media (min-width: 1366px) {
     .features {
       padding: 41px 15px 87px 39px; } }
@@ -741,8 +741,8 @@ template {
       position: absolute;
       margin: 0; }
       .features__item--first {
-        top: -362px;
-        left: 50px;
+        top: -351px;
+        left: 52px;
         max-width: 140px;
         text-align: right; }
       .features__item--second {
@@ -752,7 +752,7 @@ template {
         font-size: 16px;
         line-height: 24px;
         word-break: break-word;
-        top: -291px;
+        top: -279px;
         right: 32px;
         max-width: 130px;
         text-align: left; }
@@ -763,7 +763,7 @@ template {
         font-size: 16px;
         line-height: 24px;
         word-break: break-word;
-        top: -145px;
+        top: -134px;
         right: 71px;
         max-width: 115px;
         text-align: left; }
@@ -774,8 +774,8 @@ template {
         font-size: 16px;
         line-height: 24px;
         word-break: break-word;
-        top: -173px;
-        left: 42px;
+        top: -163px;
+        left: 41px;
         max-width: 140px;
         text-align: right; } }
   @media (min-width: 1366px) {
@@ -1153,7 +1153,7 @@ template {
 
 .pets-gallery__photos-wrapper {
   position: relative;
-  margin: 23px 0 41px;
+  margin: 23px 0 45px;
   padding: 0px 28px; }
   @media (min-width: 768px) {
     .pets-gallery__photos-wrapper {
@@ -1261,7 +1261,10 @@ template {
   padding: 27px 15px 19px 15px; }
   @media (min-width: 768px) {
     .team {
-      padding: 51px 45px 152px 45px; } }
+      padding: 52px 45px 152px 45px; } }
+  @media (min-width: 1366px) {
+    .team {
+      padding: 52px 45px 32px 45px; } }
 
 .team__title {
   font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
@@ -1310,44 +1313,42 @@ template {
 
 @media (min-width: 1366px) {
   .team-gallery {
-    align-self: flex-end; } }
+    align-self: flex-end;
+    width: 100%; } }
 
 .team-gallery__photos-wrapper {
   position: relative;
-  margin: 35px 0 41px; }
+  display: flex;
+  justify-content: flex-end;
+  margin: 98px 0 41px; }
   @media (min-width: 768px) {
     .team-gallery__photos-wrapper {
       margin: 29px 0 41px; } }
+  @media (min-width: 1366px) {
+    .team-gallery__photos-wrapper {
+      margin: 27px 40px 41px 40px; } }
 
-.team-gallery__photo-block {
+.team-gallery__photo {
   position: absolute;
   top: -63px;
   left: 50%;
-  transform: translateX(-50%);
-  padding: 0 31px; }
+  transform: translateX(-50%); }
   @media (min-width: 768px) {
-    .team-gallery__photo-block {
-      top: 296px;
-      left: 98%;
-      transform: translateX(-99%);
-      padding: 0 45px; } }
+    .team-gallery__photo {
+      top: 297px;
+      right: -151px;
+      left: auto;
+      transform: translateX(-99%); } }
   @media (min-width: 1366px) {
-    .team-gallery__photo-block {
-      width: 100%;
-      padding: 0 553px 0 0px;
-      top: -2px;
-      left: 597px; } }
-
-.team-gallery__photo {
-  display: block;
-  margin: 0 auto; }
+    .team-gallery__photo {
+      top: -1px;
+      right: 341px; } }
 
 .team-gallery__photo-info {
   display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-  margin: 98px 0 0 0;
   padding: 84px 0 12px 0;
   background-color: #1F1C1D; }
   @media (min-width: 768px) {
@@ -1359,6 +1360,14 @@ template {
       padding: 68px 95px 72px 106px;
       outline: 1px solid rgba(145, 131, 115, 0.4);
       row-gap: 7px; } }
+  @media (min-width: 1366px) {
+    .team-gallery__photo-info {
+      border-top: 22px solid #151313;
+      border-right: 33px solid #151313;
+      border-bottom: 22px solid #151313;
+      max-width: 658px;
+      margin: 0 85px 0 0;
+      padding: 68px 95px 69px 98px; } }
 
 .team-gallery__name {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
@@ -1410,7 +1419,7 @@ template {
       line-height: 26px;
       word-break: break-word;
       text-align: left;
-      margin: 16px 0 38px 0; } }
+      margin: 16px 0 36px 0; } }
 
 .team-gallery__link {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
@@ -1436,13 +1445,25 @@ template {
   position: absolute;
   display: flex;
   justify-content: space-between;
-  top: 65px;
-  left: 0;
-  transform: translateY(-50%);
-  width: 100%; }
+  top: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 189px; }
   @media (min-width: 768px) {
     .team-gallery__sliders {
-      top: 196px; } }
+      top: auto;
+      left: auto;
+      bottom: -107px;
+      right: -142px;
+      width: 302px; } }
+  @media (min-width: 1366px) {
+    .team-gallery__sliders {
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      left: auto;
+      bottom: auto;
+      right: auto; } }
 
 .team-gallery__slider {
   background: none;
