@@ -8,6 +8,10 @@
   @media (min-width: $tablet) {
     padding: 26px 15px 46px 31px;
   }
+
+  @media (min-width: $desktop) {
+    padding: 36px 30px 47px 31px;
+  }
 }
 
 .reviews__title {

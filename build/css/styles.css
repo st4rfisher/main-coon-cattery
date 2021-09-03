@@ -1725,6 +1725,9 @@ template {
   @media (min-width: 768px) {
     .reviews {
       padding: 26px 15px 46px 31px; } }
+  @media (min-width: 1366px) {
+    .reviews {
+      padding: 36px 30px 47px 31px; } }
 
 .reviews__title {
   font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
