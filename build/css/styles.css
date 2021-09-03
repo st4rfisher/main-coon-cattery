@@ -1490,6 +1490,9 @@ template {
   @media (min-width: 768px) {
     .questions-answers {
       padding: 105px 55px 35px 55px; } }
+  @media (min-width: 1366px) {
+    .questions-answers {
+      padding: 41px 55px 35px 55px; } }
 
 .questions-answers__title {
   font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
@@ -1510,6 +1513,9 @@ template {
       word-break: break-word;
       color: #FFFFFF;
       margin: 30px 10px 18px 0px; } }
+  @media (min-width: 1366px) {
+    .questions-answers__title {
+      margin: 30px 0px 21px 0; } }
 
 .questions-answers__description {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
@@ -1542,6 +1548,11 @@ template {
     .questions-answers__list {
       margin: 54px 0 0 105px;
       row-gap: 23px; } }
+  @media (min-width: 1366px) {
+    .questions-answers__list {
+      max-width: 793px;
+      margin: 54px 0 0 136px;
+      row-gap: 38px; } }
 
 .questions-answers__item {
   position: relative; }
@@ -1553,7 +1564,14 @@ template {
     width: 59px;
     height: 47px;
     background-image: url("../img/icons/01-icon.svg");
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-size: 100%; }
+    @media (min-width: 1366px) {
+      .questions-answers__item--first::before {
+        top: 29px;
+        left: -113px;
+        width: 65px;
+        height: 53px; } }
   .questions-answers__item--second::before {
     position: absolute;
     top: 19px;
@@ -1562,7 +1580,14 @@ template {
     width: 59px;
     height: 47px;
     background-image: url("../img/icons/02-icon.svg");
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-size: 100%; }
+    @media (min-width: 1366px) {
+      .questions-answers__item--second::before {
+        top: 29px;
+        left: -113px;
+        width: 75px;
+        height: 52px; } }
   .questions-answers__item--third::before {
     position: absolute;
     top: 19px;
@@ -1571,7 +1596,14 @@ template {
     width: 59px;
     height: 47px;
     background-image: url("../img/icons/03-icon.svg");
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-size: 100%; }
+    @media (min-width: 1366px) {
+      .questions-answers__item--third::before {
+        top: 30px;
+        left: -114px;
+        width: 75px;
+        height: 52px; } }
   .questions-answers__item--fourth::before {
     position: absolute;
     top: 19px;
@@ -1580,7 +1612,14 @@ template {
     width: 59px;
     height: 47px;
     background-image: url("../img/icons/04-icon.svg");
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-size: 100%; }
+    @media (min-width: 1366px) {
+      .questions-answers__item--fourth::before {
+        top: 28px;
+        left: -113px;
+        width: 75px;
+        height: 52px; } }
 
 .questions-answers__item-block {
   display: flex; }
@@ -1612,9 +1651,15 @@ template {
       text-decoration: none;
       color: #FFFFFF;
       padding: 10px 75px 10px 26px; } }
+  @media (min-width: 1366px) {
+    .questions-answers__question {
+      padding: 45px 75px 43px 38px; } }
   @media (min-width: 768px) {
     .questions-answers__item--first .questions-answers__question {
       padding: 14px 85px 10px 28px; } }
+  @media (min-width: 1366px) {
+    .questions-answers__item--first .questions-answers__question {
+      padding: 14px 85px 12px 42px; } }
 
 .questions-answers__answer {
   display: none;
@@ -1626,6 +1671,9 @@ template {
   @media (min-width: 768px) {
     .questions-answers__answer {
       padding: 25px 140px 4px 28px; } }
+  @media (min-width: 1366px) {
+    .questions-answers__answer {
+      padding: 34px 200px 21px 42px; } }
   .questions-answers__answer--show {
     display: block; }
 
@@ -1655,12 +1703,18 @@ template {
   @media (min-width: 768px) {
     .questions-answers__button {
       padding: 32px 26px 25px 28px; } }
+  @media (min-width: 1366px) {
+    .questions-answers__button {
+      padding: 33px 43px 25px 43px; } }
   .questions-answers__button--active {
     background-color: #A07B50;
     fill: red; }
     @media (min-width: 768px) {
       .questions-answers__button--active {
         padding: 29px 27px 25px 28px; } }
+    @media (min-width: 768px) {
+      .questions-answers__button--active {
+        padding: 49px 41px 40px 45px; } }
 
 .reviews {
   display: flex;
