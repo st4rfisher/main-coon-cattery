@@ -18,6 +18,11 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop) {
+    padding: 65px 223px 54px 191px;
+    justify-content: space-around;
+  }
 }
 
 .footer__address {
@@ -29,6 +34,10 @@
     order: 2;
     margin: 0 0 0 46px;
   }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+  }
 }
 
 .footer__phone {
@@ -38,6 +47,10 @@
   @media (min-width: $tablet) {
     order: 3;
     margin: 0 0 0 8px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
   }
 }
 
@@ -59,5 +72,10 @@
 
   @media (min-width: $tablet) {
     display: none;
+  }
+
+  @media (min-width: $desktop) {
+    display: block;
+    margin: 0;
   }
 }
