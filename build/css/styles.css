@@ -1960,7 +1960,7 @@ template {
       justify-content: space-between; } }
   @media (min-width: 1366px) {
     .footer__container {
-      padding: 65px 223px 54px 191px;
+      padding: 65px 223px 62px 191px;
       justify-content: space-around; } }
 
 .footer__address {
