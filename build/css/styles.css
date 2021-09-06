@@ -1727,7 +1727,7 @@ template {
       padding: 26px 15px 46px 31px; } }
   @media (min-width: 1366px) {
     .reviews {
-      padding: 36px 30px 47px 31px; } }
+      padding: 36px 30px 71px 31px; } }
 
 .reviews__title {
   font-family: "Yeseva One", "Arial", "Tahoma", sans-serif;
@@ -1807,7 +1807,7 @@ template {
       flex-wrap: wrap;
       max-width: 640px;
       margin: 0 84px 0 0;
-      padding: 108px 90px 98px 145px;
+      padding: 108px 90px 97px 145px;
       -moz-column-gap: 38px;
            column-gap: 38px; } }
 
