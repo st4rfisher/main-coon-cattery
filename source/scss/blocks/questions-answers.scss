@@ -64,10 +64,10 @@
 
   &--first::before {
     position: absolute;
-    top: 19px;
+    top: 20px;
     left: -79px;
     content: "";
-    width: 59px;
+    width: 47px;
     height: 47px;
     background-image: url("../img/icons/01-icon.svg");
     background-repeat: no-repeat;
@@ -83,10 +83,10 @@
 
   &--second::before {
     position: absolute;
-    top: 19px;
+    top: 20px;
     left: -79px;
     content: "";
-    width: 59px;
+    width: 54px;
     height: 47px;
     background-image: url("../img/icons/02-icon.svg");
     background-repeat: no-repeat;
@@ -102,10 +102,10 @@
 
   &--third::before {
     position: absolute;
-    top: 19px;
+    top: 20px;
     left: -79px;
     content: "";
-    width: 59px;
+    width: 54px;
     height: 47px;
     background-image: url("../img/icons/03-icon.svg");
     background-repeat: no-repeat;
@@ -121,10 +121,10 @@
 
   &--fourth::before {
     position: absolute;
-    top: 19px;
+    top: 20px;
     left: -79px;
     content: "";
-    width: 59px;
+    width: 55px;
     height: 47px;
     background-image: url("../img/icons/04-icon.svg");
     background-repeat: no-repeat;
@@ -225,10 +225,10 @@
     fill: red;
 
     @media (min-width: $tablet) {
-      padding: 29px 27px 25px 28px;
+      padding: 29px 27px 27px 28px;
     }
 
-    @media (min-width: $tablet) {
+    @media (min-width: $desktop) {
       padding: 49px 41px 40px 45px;
     }
   }
