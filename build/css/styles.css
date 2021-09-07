@@ -1512,7 +1512,7 @@ template {
       line-height: 42px;
       word-break: break-word;
       color: #FFFFFF;
-      margin: 30px 10px 18px 0px; } }
+      margin: 32px 9px 19px 0; } }
   @media (min-width: 1366px) {
     .questions-answers__title {
       margin: 30px 0px 21px 0; } }
@@ -1558,10 +1558,10 @@ template {
   position: relative; }
   .questions-answers__item--first::before {
     position: absolute;
-    top: 19px;
+    top: 18px;
     left: -79px;
     content: "";
-    width: 59px;
+    width: 47px;
     height: 47px;
     background-image: url("../img/icons/01-icon.svg");
     background-repeat: no-repeat;
@@ -1577,7 +1577,7 @@ template {
     top: 19px;
     left: -79px;
     content: "";
-    width: 59px;
+    width: 55px;
     height: 47px;
     background-image: url("../img/icons/02-icon.svg");
     background-repeat: no-repeat;
@@ -1590,10 +1590,10 @@ template {
         height: 52px; } }
   .questions-answers__item--third::before {
     position: absolute;
-    top: 19px;
+    top: 20px;
     left: -79px;
     content: "";
-    width: 59px;
+    width: 54px;
     height: 47px;
     background-image: url("../img/icons/03-icon.svg");
     background-repeat: no-repeat;
@@ -1607,9 +1607,9 @@ template {
   .questions-answers__item--fourth::before {
     position: absolute;
     top: 19px;
-    left: -79px;
+    left: -80px;
     content: "";
-    width: 59px;
+    width: 56px;
     height: 47px;
     background-image: url("../img/icons/04-icon.svg");
     background-repeat: no-repeat;
@@ -1656,7 +1656,7 @@ template {
       padding: 45px 75px 43px 38px; } }
   @media (min-width: 768px) {
     .questions-answers__item--first .questions-answers__question {
-      padding: 14px 85px 10px 28px; } }
+      padding: 12px 85px 10px 28px; } }
   @media (min-width: 1366px) {
     .questions-answers__item--first .questions-answers__question {
       padding: 14px 85px 12px 42px; } }
@@ -1670,7 +1670,7 @@ template {
   box-sizing: border-box; }
   @media (min-width: 768px) {
     .questions-answers__answer {
-      padding: 25px 140px 4px 28px; } }
+      padding: 24px 140px 4px 28px; } }
   @media (min-width: 1366px) {
     .questions-answers__answer {
       padding: 34px 200px 21px 42px; } }
@@ -1711,8 +1711,8 @@ template {
     fill: red; }
     @media (min-width: 768px) {
       .questions-answers__button--active {
-        padding: 29px 27px 25px 28px; } }
-    @media (min-width: 768px) {
+        padding: 28px 28px 26px 27px; } }
+    @media (min-width: 1366px) {
       .questions-answers__button--active {
         padding: 49px 41px 40px 45px; } }
 
