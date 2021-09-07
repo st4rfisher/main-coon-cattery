@@ -41,12 +41,17 @@
 <path d="M73.6474 61.7933H71.0701V46.7351C71.0701 46.2554 70.7657 45.8133 70.3174 45.6419C69.8393 45.4591 69.2823 45.6159 68.9701 46.0212L56.4743 62.2497C55.8927 63.0051 56.4509 64.1337 57.4029 64.1337H68.7273V67.9567C68.7273 68.6033 69.2518 69.127 69.8987 69.127C70.5455 69.127 71.0701 68.6031 71.0701 67.9567V64.1337H73.6474C74.2945 64.1337 74.8188 63.6098 74.8188 62.9634C74.8188 62.317 74.2943 61.7933 73.6474 61.7933ZM68.7271 61.7933H59.7818L68.7271 50.176V61.7933Z" stroke="#1F1C1D" mask="url(#path-1-inside-1)"/>
 </symbol><symbol id="arrow-left-icon" viewBox="0 0 128 128">
 <g>
-<line x1="87.5" x2="40.5" y1="111" y2="64"/>
-<line x1="40.5" x2="87.5" y1="64" y2="17"/>
+<line stroke-width="12" stroke-linecap="square" stroke-miterlimit="10" x1="87.5" x2="40.5" y1="111" y2="64"/>
+<line stroke-width="12" stroke-linecap="square" stroke-miterlimit="10" x1="40.5" x2="87.5" y1="64" y2="17"/>
 </g>
 </symbol><symbol id="arrow-left-tablet-icon" viewBox="0 0 60 18">
 <path d="M60 9L1 9M1 9L14.4857 17M1 9L14.4857 0.999999" stroke="#A07B50" stroke-opacity="0.5" stroke-width="0.5"/>
-</symbol><symbol id="arrow-right-icon" viewBox="0 0 128 128"><g><line style="fill:none;stroke:#2F3435;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="40.5" x2="87.5" y1="17" y2="64"/><line style="fill:none;stroke:#2F3435;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="87.5" x2="40.5" y1="64" y2="111"/></g></symbol><symbol id="arrow-right-tablet-icon" viewBox="0 0 60 18">
+</symbol><symbol id="arrow-right-icon" viewBox="0 0 128 128">
+  <g>
+    <line stroke-width="12" stroke-linecap="square" stroke-miterlimit="10" x1="40.5" x2="87.5" y1="17" y2="64"/>
+    <line stroke-width="12" stroke-linecap="square" stroke-miterlimit="10" x1="87.5" x2="40.5" y1="64" y2="111"/>
+  </g>
+</symbol><symbol id="arrow-right-tablet-icon" viewBox="0 0 60 18">
 <path d="M0 9L59 9M59 9L45.5143 17M59 9L45.5143 1" stroke="#A07B50" stroke-opacity="0.5" stroke-width="0.5"/>
 </symbol><symbol id="burger-menu-icon" viewBox="0 0 35 18">
 <path d="M0 1H35" stroke="#E5E5E5" stroke-width="0.5"/>
