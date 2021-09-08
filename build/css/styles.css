@@ -1981,7 +1981,7 @@ template {
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-  padding: 35px 28px 36px 28px;
+  padding: 35px 28px 33px 28px;
   row-gap: 15px;
   background-color: #181617;
   max-width: 1366px;
