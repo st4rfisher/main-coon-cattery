@@ -135,6 +135,7 @@
   border: 1px solid $gold;
   color: $white;
   text-decoration: none;
+  transition: .3s;
 
   @media (min-width: $tablet) {
     @include link-text;

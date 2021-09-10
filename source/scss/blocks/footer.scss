@@ -42,6 +42,7 @@
 
 .footer__phone {
   @include paragraph-mobile;
+  text-decoration: none;
   color: $white;
 
   @media (min-width: $tablet) {

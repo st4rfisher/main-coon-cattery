@@ -322,6 +322,70 @@ template {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
+.logo {
+  fill: #A07B50;
+  transition: .3s; }
+  .logo:hover {
+    fill: #FFFFFF;
+    transform: scale(1.3); }
+  .logo:active {
+    opacity: 0.4; }
+
+.link:hover {
+  border: 1px solid #7e613f;
+  background-color: #7e613f;
+  transition: .3s;
+  transform: scale(1.1); }
+
+.link:active {
+  opacity: 0.4; }
+
+.button:hover {
+  cursor: pointer;
+  background: #7e613f; }
+
+.button:active {
+  opacity: 0.4; }
+
+.phone {
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: .3s; }
+  .phone:hover {
+    color: #A07B50;
+    transform: scale(1.1);
+    transition: .3s; }
+  .phone:active {
+    opacity: 0.4; }
+
+.icon {
+  fill: #FFFFFF;
+  cursor: pointer;
+  transition: .3s; }
+  .icon--vk:hover {
+    fill: #597da3;
+    transform: scale(1.5); }
+  .icon--vk:active {
+    fill: #354a61; }
+  .icon--twitter:hover {
+    fill: #1DA1F2;
+    transform: scale(1.5); }
+  .icon--twitter:active {
+    fill: #0967a0; }
+  .icon--facebook:hover {
+    fill: #3b5998;
+    transform: scale(1.5); }
+  .icon--facebook:active {
+    fill: #263961; }
+
+.arrow {
+  cursor: pointer;
+  transition: .3s; }
+  .slider:hover .arrow {
+    transform: scale(1.5); }
+  .slider:active .arrow {
+    opacity: 0.4; }
+
 @font-face {
   font-family: "Roboto";
   font-weight: 300;
@@ -356,6 +420,18 @@ template {
   font-style: normal;
   font-display: swap;
   src: local("Yeseva One"), url("../fonts/yesevaOne-regular.woff2") format("woff2"), url("../fonts/yesevaOne-regular.woff") format("woff"); }
+
+@-webkit-keyframes bounce-right {
+  from {
+    transform: translateX(0); }
+  to {
+    transform: translateX(3px); } }
+
+@keyframes bounce-right {
+  from {
+    transform: translateX(0); }
+  to {
+    transform: translateX(3px); } }
 
 .header {
   background-color: #f5f5f5; }
@@ -413,7 +489,6 @@ template {
       display: none; } }
 
 .header__phone {
-  display: none;
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -422,8 +497,7 @@ template {
   word-break: break-word;
   text-decoration: none;
   color: #FFFFFF;
-  color: #FFFFFF;
-  text-decoration: none; }
+  display: none; }
   @media (min-width: 1366px) {
     .header__phone {
       display: block;
@@ -509,7 +583,7 @@ template {
     .header__description {
       margin: 17px 0 50px; } }
 
-.header__link {
+.header__link-button {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -520,9 +594,10 @@ template {
   border: 1px solid #A07B50;
   color: #FFFFFF;
   text-decoration: none;
+  transition: .3s;
   margin: 0 auto; }
   @media (min-width: 768px) {
-    .header__link {
+    .header__link-button {
       font-family: "Roboto", "Arial", "Tahoma", sans-serif;
       font-style: normal;
       font-weight: normal;
@@ -530,7 +605,7 @@ template {
       line-height: 16px;
       word-break: break-word; } }
   @media (min-width: 768px) {
-    .header__link {
+    .header__link-button {
       margin: 0;
       margin-right: auto;
       padding: 16px 43px 18px 36px; } }
@@ -1092,14 +1167,15 @@ template {
     .pets-care__description {
       line-height: 23px; } }
 
-.pets-care__link {
+.pets-care__link-button {
   display: flex;
   align-items: center;
   justify-content: center;
   min-width: 46px;
-  background-color: #A07B50; }
+  background-color: #A07B50;
+  transition: .3s; }
   @media (min-width: 768px) {
-    .pets-care__link {
+    .pets-care__link-button {
       min-width: 58px; } }
 
 .pets-care__arrow {
@@ -1107,6 +1183,9 @@ template {
   height: 45px;
   stroke: #FFFFFF;
   stroke-width: 5; }
+  .pets-care__link-button:hover .pets-care__arrow {
+    -webkit-animation: bounce-right .3s alternate ease infinite;
+            animation: bounce-right .3s alternate ease infinite; }
 
 .pets-gallery {
   width: 100%; }
@@ -1129,11 +1208,14 @@ template {
       padding: 28px 44px 17px 28px; } }
 
 .pets-gallery__item {
-  opacity: 0.2; }
+  opacity: 0.2;
+  transition: .3s; }
+  .pets-gallery__item:hover {
+    opacity: 1; }
   .pets-gallery__item--active {
     opacity: 1; }
 
-.pets-gallery__link {
+.pets-gallery__button {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1143,7 +1225,7 @@ template {
   text-decoration: none;
   color: #FFFFFF; }
   @media (min-width: 768px) {
-    .pets-gallery__link {
+    .pets-gallery__button {
       font-family: "Roboto", "Arial", "Tahoma", sans-serif;
       font-style: normal;
       font-weight: 500;
@@ -1229,7 +1311,7 @@ template {
   stroke: #A07B50;
   stroke-width: 5; }
 
-.pets-gallery__button-link {
+.pets-gallery__link-button {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1240,9 +1322,10 @@ template {
   border: 1px solid #A07B50;
   color: #FFFFFF;
   text-decoration: none;
+  transition: .3s;
   padding: 10px 20px 13px 20px; }
   @media (min-width: 768px) {
-    .pets-gallery__button-link {
+    .pets-gallery__link-button {
       font-family: "Roboto", "Arial", "Tahoma", sans-serif;
       font-style: normal;
       font-weight: normal;
@@ -1250,7 +1333,7 @@ template {
       line-height: 16px;
       word-break: break-word; } }
   @media (min-width: 768px) {
-    .pets-gallery__button-link {
+    .pets-gallery__link-button {
       padding: 18px 43px 18px 40px; } }
 
 .team {
@@ -1431,7 +1514,8 @@ template {
   padding: 11px 20px 13px 20px;
   border: 1px solid #A07B50;
   color: #FFFFFF;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: .3s; }
   @media (min-width: 768px) {
     .team-gallery__link {
       font-family: "Roboto", "Arial", "Tahoma", sans-serif;
@@ -1699,7 +1783,8 @@ template {
 .questions-answers__button {
   border: 1px solid #A07B50;
   background: none;
-  padding: 10px 12px 5px 13px; }
+  padding: 10px 12px 5px 13px;
+  transition: .3s; }
   @media (min-width: 768px) {
     .questions-answers__button {
       padding: 32px 26px 25px 28px; } }
@@ -1707,14 +1792,23 @@ template {
     .questions-answers__button {
       padding: 33px 43px 25px 43px; } }
   .questions-answers__button--active {
-    background-color: #A07B50;
-    fill: red; }
+    background-color: #A07B50; }
     @media (min-width: 768px) {
       .questions-answers__button--active {
         padding: 28px 28px 26px 27px; } }
     @media (min-width: 1366px) {
       .questions-answers__button--active {
         padding: 49px 41px 40px 45px; } }
+
+.questions-answers__icon {
+  stroke: #A07B50; }
+  .questions-answers__icon--curtail {
+    stroke: #FFFFFF; }
+
+.questions-answers__icon--unfurl {
+  transition: .3s; }
+  .questions-answers__button:hover .questions-answers__icon--unfurl {
+    stroke: #FFFFFF; }
 
 .reviews {
   display: flex;
@@ -1892,7 +1986,8 @@ template {
   padding: 11px 20px 13px 20px;
   border: 1px solid #A07B50;
   color: #FFFFFF;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: .3s; }
   @media (min-width: 768px) {
     .reviews-gallery__link {
       font-family: "Roboto", "Arial", "Tahoma", sans-serif;
@@ -1931,20 +2026,20 @@ template {
   padding: 0;
   stroke: #A07B50;
   background-repeat: no-repeat;
-  background-size: 100%; }
-  @media (min-width: 768px) {
-    .reviews-gallery__slider--left {
-      width: 59px;
-      height: 16px;
-      background-image: url("../img/icons/gallery-left-icon.svg"); }
-    .reviews-gallery__slider--right {
-      width: 59px;
-      height: 16px;
-      background-image: url("../img/icons/gallery-right-icon.svg"); } }
+  background-size: 100%;
+  cursor: pointer; }
 
 @media (min-width: 768px) {
-  .reviews-gallery__arrow {
+  .reviews-gallery__arrow--mobile {
     display: none; } }
+
+.reviews-gallery__arrow--tablet {
+  display: none; }
+  @media (min-width: 768px) {
+    .reviews-gallery__arrow--tablet {
+      display: block;
+      width: 59px;
+      height: 16px; } }
 
 .reviews-gallery__social-list {
   display: flex;
@@ -1957,7 +2052,12 @@ template {
 
 .reviews-gallery__icon {
   border: 1px solid #A07B50;
-  fill: #A07B50; }
+  fill: #A07B50;
+  cursor: pointer;
+  transition: .3s; }
+  .reviews-gallery__icon:hover {
+    transform: scale(1.3);
+    border: 1px solid #FFFFFF; }
 
 .reviews-gallery__date {
   font-family: "Roboto", "Arial", "Tahoma", sans-serif;
@@ -2020,6 +2120,7 @@ template {
   font-size: 14px;
   line-height: 20px;
   word-break: break-word;
+  text-decoration: none;
   color: #FFFFFF; }
   @media (min-width: 768px) {
     .footer__phone {

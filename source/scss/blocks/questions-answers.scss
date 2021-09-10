@@ -211,6 +211,7 @@
   border: 1px solid $gold;
   background: none;
   padding: 10px 12px 5px 13px;
+  transition: .3s;
 
   @media (min-width: $tablet) {
     padding: 32px 26px 25px 28px;
@@ -222,7 +223,7 @@
 
   &--active {
     background-color: $gold;
-    fill: red;
+
 
     @media (min-width: $tablet) {
       padding: 28px 28px 26px 27px;
@@ -231,5 +232,21 @@
     @media (min-width: $desktop) {
       padding: 49px 41px 40px 45px;
     }
+  }
+}
+
+.questions-answers__icon {
+  stroke: $gold;
+
+  &--curtail {
+    stroke: $white;
+  }
+}
+
+.questions-answers__icon--unfurl {
+  transition: .3s;
+
+  .questions-answers__button:hover & {
+    stroke: $white;
   }
 }

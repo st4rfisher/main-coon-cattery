@@ -166,25 +166,24 @@
   stroke: $gold;
   background-repeat: no-repeat;
   background-size: 100%;
-
-  @media (min-width: $tablet) {
-    &--left {
-      width: 59px;
-      height: 16px;
-      background-image: url("../img/icons/gallery-left-icon.svg");
-    }
-
-    &--right {
-      width: 59px;
-      height: 16px;
-      background-image: url("../img/icons/gallery-right-icon.svg");
-    }
-  }
+  cursor: pointer;
 }
 
 .reviews-gallery__arrow {
-  @media (min-width: $tablet) {
-     display: none;
+  &--mobile {
+    @media (min-width: $tablet) {
+      display: none;
+   }
+  }
+
+  &--tablet {
+    display: none;
+
+    @media (min-width: $tablet) {
+      display: block;
+      width: 59px;
+      height: 16px;
+   }
   }
 }
 
@@ -200,6 +199,13 @@
 .reviews-gallery__icon {
   border: 1px solid $gold;
   fill: $gold;
+  cursor: pointer;
+  transition: .3s;
+
+  &:hover {
+    transform: scale(1.3);
+    border: 1px solid $white;
+  }
 }
 
 .reviews-gallery__date {
