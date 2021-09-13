@@ -10,17 +10,16 @@
     <header class="header">
       <div class="header__container">
         <nav class="header__navigation">
-          <div class="menu-block">
-            <ul class="menu">
-              <li class="menu__item menu__item--active"><a class="menu__item-link" href="index.html">Главная</a></li>
-              <li class="menu__item"><a class="menu__item-link" href="catalog.html">Фото и видео</a></li>
-              <li class="menu__item"><a class="menu__item-link" href="review.html">Форма отзыва</a></li>
-              <li class="menu__item"><a class="menu__item-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+          <div class="menu">
+            <ul class="menu__list">
+              <li class="menu__item menu__item--active"><a class="menu__item-link item" href="index.html">Главная</a></li>
+              <li class="menu__item"><a class="menu__item-link item" href="#">Каталог питомцев</a></li>
+              <li class="menu__item"><a class="menu__item-link item" href="#">Об уходе</a></li>
             </ul>
 
-            <button class="menu-block__close-button" type="button" aria-label="Закрыть меню">
-              <svg class="menu-block__icon" width="35" height="18">
-                <use xlink:href="img/icons/sprite.svg#burger-menu-icon"></use>
+            <button class="menu__close-button" type="button" aria-label="Закрыть меню">
+              <svg class="menu__icon" width="32" height="32">
+                <use xlink:href="img/icons/sprite.svg#close-icon"></use>
               </svg>
             </button>
           </div>
@@ -29,13 +28,13 @@
               <use xlink:href="img/icons/sprite.svg#burger-menu-icon"></use>
             </svg>
           </button>
-          <a class="header__logo" href="#">
+          <a class="header__logo" href="index.html">
             <span class="visually-hidden">Логотип Питомника Мейн-Кунов</span>
             <svg class="header__image logo" width="55" height="25">
               <use xlink:href="img/icons/sprite.svg#logo"></use>
             </svg>
           </a>
-          <a class="header__phone phone" href="tel:+73839006568">+7 (383) 900-65-68</a>
+          <a class="header__phone item" href="tel:+73839006568">+7 (383) 900-65-68</a>
         </nav>
 
         <div class="header__content">
@@ -422,7 +421,7 @@
         <a class="footer__address">
           Новосибирск, Пушкинский проспект, 19
         </a>
-        <a class="footer__phone phone" href="tel:+73839006568">+7 (383) 900-65-68</a>
+        <a class="footer__phone item" href="tel:+73839006568">+7 (383) 900-65-68</a>
         <ul class="footer__social-list">
           <li class="footer__item">
             <svg class="footer__icon icon icon--facebook" width="7" height="16">
