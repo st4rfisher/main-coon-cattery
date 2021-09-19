@@ -35,7 +35,7 @@ const movePhoto = (currentIndex, photos) => {
 }
 
 //определение текущей вкладки с фотографиями
-const checkCurrentTab = () => {
+const getPhotos = () => {
   let photos;
 
   if (currentTab === 'he-cats') {
@@ -53,21 +53,21 @@ const checkCurrentTab = () => {
 rightSlider.addEventListener("click", () => {
   currentIndex++;
 
-  if (currentIndex >= checkCurrentTab().length) {
+  if (currentIndex >= getPhotos().length) {
     currentIndex = 0;
   }
 
-  movePhoto(currentIndex, checkCurrentTab())
+  movePhoto(currentIndex, getPhotos())
 });
 
 //переключение фотографий влево
 leftSlider.addEventListener("click", () => {
   if (currentIndex <= 0) {
-    currentIndex = checkCurrentTab().length;
+    currentIndex = getPhotos().length;
   }
 
   currentIndex--;
-  movePhoto(currentIndex, checkCurrentTab())
+  movePhoto(currentIndex, getPhotos())
 });
 
 const list = document.querySelector('.questions-answers__list');
