@@ -116,8 +116,13 @@
   display: block;
   margin: 0 auto;
   object-fit: contain;
-  max-height: 491px;
+  height: 247px;
   width: 100%;
+
+  @media (min-width: $tablet) {
+    height: 495px;
+    width: 603px;
+  }
 
   @media (min-width: $desktop) {
     align-self: flex-start;

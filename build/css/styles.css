@@ -1334,8 +1334,12 @@ template {
   margin: 0 auto;
   -o-object-fit: contain;
      object-fit: contain;
-  max-height: 491px;
+  height: 247px;
   width: 100%; }
+  @media (min-width: 768px) {
+    .pets-gallery__image {
+      height: 495px;
+      width: 603px; } }
   @media (min-width: 1366px) {
     .pets-gallery__image {
       align-self: flex-start;
