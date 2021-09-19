@@ -1316,7 +1316,8 @@ template {
 
 .pets-gallery__photo {
   display: none;
-  margin: auto; }
+  margin: auto;
+  min-height: 248px; }
   @media (min-width: 1366px) {
     .pets-gallery__photo {
       display: block;

@@ -93,6 +93,7 @@
 .pets-gallery__photo {
   display: none;
   margin: auto;
+  min-height: 248px;
 
   @media (min-width: $desktop) {
     display: block;
