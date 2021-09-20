@@ -1,7 +1,5 @@
 .team-gallery {
-  @media (min-width: $tablet) {
-    align-self: flex-start;
-  }
+  align-self: center;
 
   @media (min-width: $desktop) {
     align-self: flex-end;

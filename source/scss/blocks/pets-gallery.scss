@@ -54,12 +54,13 @@
   padding: 0px 28px;
 
   @media (min-width: $tablet) {
-    margin: 29px auto 51px auto;
+    margin: 25px auto 51px auto;
     max-width: 723px;
     padding: 0;
   }
 
   @media (min-width: $desktop) {
+    margin: 25px auto 55px auto;
     max-width: 979px;
   }
 }
@@ -93,7 +94,6 @@
 .pets-gallery__photo {
   display: none;
   margin: auto;
-  min-height: 248px;
 
   @media (min-width: $desktop) {
     display: block;
@@ -126,9 +126,7 @@
   }
 
   @media (min-width: $desktop) {
-    align-self: flex-start;
     object-fit: cover;
-    
     height: 100%;
     width: 100%;
   }
