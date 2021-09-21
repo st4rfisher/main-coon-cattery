@@ -1454,6 +1454,7 @@ template {
       margin: 0 28px 0 0; } }
   @media (min-width: 1366px) {
     .team-gallery {
+      margin: 0;
       align-self: flex-end;
       width: 100%; } }
 
