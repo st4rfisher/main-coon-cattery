@@ -1449,6 +1449,9 @@ template {
 
 .team-gallery {
   align-self: center; }
+  @media (min-width: 768px) {
+    .team-gallery {
+      margin: 0 28px 0 0; } }
   @media (min-width: 1366px) {
     .team-gallery {
       align-self: flex-end;
@@ -1466,13 +1469,24 @@ template {
     .team-gallery__photos-wrapper {
       margin: 27px 40px 41px 40px; } }
 
+.team-gallery__members-block {
+  margin: 0;
+  padding: 0; }
+
+.team-gallery__member {
+  display: none; }
+  .team-gallery__member--show {
+    display: block; }
+
 .team-gallery__photo {
   position: absolute;
   top: -63px;
   left: 50%;
-  transform: translateX(-50%); }
+  transform: translateX(-50%);
+  width: 126px; }
   @media (min-width: 768px) {
     .team-gallery__photo {
+      width: auto;
       top: 297px;
       right: -151px;
       left: auto;
@@ -1482,7 +1496,10 @@ template {
       top: -1px;
       right: 341px; } }
 
-.team-gallery__photo-info {
+.team-gallery__image {
+  width: 100%; }
+
+.team-gallery__info {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1490,7 +1507,7 @@ template {
   padding: 84px 0 12px 0;
   background-color: #1F1C1D; }
   @media (min-width: 768px) {
-    .team-gallery__photo-info {
+    .team-gallery__info {
       align-items: flex-start;
       border: 25px solid #151313;
       margin: 0;
@@ -1499,7 +1516,7 @@ template {
       outline: 1px solid rgba(145, 131, 115, 0.4);
       row-gap: 7px; } }
   @media (min-width: 1366px) {
-    .team-gallery__photo-info {
+    .team-gallery__info {
       border-top: 22px solid #151313;
       border-right: 33px solid #151313;
       border-bottom: 22px solid #151313;
@@ -1526,7 +1543,8 @@ template {
       word-break: break-word; } }
 
 .team-gallery__position {
-  color: #A07B50; }
+  color: #A07B50;
+  text-align: center; }
   @media (min-width: 768px) {
     .team-gallery__position {
       font-family: "Roboto", "Arial", "Tahoma", sans-serif;
@@ -1547,7 +1565,7 @@ template {
   opacity: 0.72;
   text-align: center;
   color: #FFFFFF;
-  margin: 20px 10px; }
+  margin: 21px 10px; }
   @media (min-width: 768px) {
     .team-gallery__blockquote {
       font-family: "Roboto", "Arial", "Tahoma", sans-serif;

@@ -303,41 +303,81 @@
           <p class="team__description">
             Все сотрудники нашего питомника дипломированые специалисты в области фелинологии и ветеринарии
           </p>
+
           <div class="team-gallery">
             <div class="team-gallery__photos-wrapper">
-              <picture class="team-gallery__photo">
-                <source type="image/webp" media="(min-width: 1366px)" srcset="img/photo-1-desktop@1x.webp 1x, img/photo-1-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.webp 1x, img/photo-1-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/photo-1-mobile@1x.webp 1x, img/photo-1-mobile@2x.webp 2x">
-                <source media="(min-width: 1366px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
-                <img class="team-gallery__image" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Фото">
-              </picture>
-              <div class="team-gallery__photo-info">
-                <span class="team-gallery__name">Серёжа Попов</span>
-                <span class="team-gallery__position">Основатель питомника</span>
-                <p class="team-gallery__blockquote">
-                  Наш питомник занимается разведением Мейн-Кунов на протяжении 15 лет.
-                  Мы в ответе за каждого приобретенного вами питомца
-                </p>
-                <ul class="team-gallery__social-list">
-                  <li class="team-gallery__item">
-                    <svg class="team-gallery__icon icon icon--facebook" width="5" height="12">
-                      <use xlink:href="img/icons/sprite.svg#facebook-icon"></use>
-                    </svg>
-                  </li>
-                  <li class="team-gallery__item">
-                    <svg class="team-gallery__icon icon icon--twitter" width="16" height="12">
-                      <use xlink:href="img/icons/sprite.svg#twitter-icon"></use>
-                    </svg>
-                  </li>
-                  <li class="team-gallery__item icon icon--vk">
-                    <svg class="team-gallery__icon" width="18" height="10">
-                      <use xlink:href="img/icons/sprite.svg#vk-icon"></use>
-                    </svg>
-                  </li>
-                </ul>
-              </div>
+              <ul class="team-gallery__members-block">
+                <li class="team-gallery__member team-gallery__member--show">
+                  <picture class="team-gallery__photo">
+                    <source type="image/webp" media="(min-width: 1366px)" srcset="img/photo-1-desktop@1x.webp 1x, img/photo-1-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.webp 1x, img/photo-1-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-1-mobile@1x.webp 1x, img/photo-1-mobile@2x.webp 2x">
+                    <source media="(min-width: 1366px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                    <img class="team-gallery__image" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Фото">
+                  </picture>
+                  <div class="team-gallery__info">
+                    <span class="team-gallery__name">Серёжа Попов</span>
+                    <span class="team-gallery__position">Основатель питомника</span>
+                    <p class="team-gallery__blockquote">
+                      Наш питомник занимается разведением Мейн-Кунов на протяжении 15 лет.
+                      Мы в ответе за каждого приобретенного вами питомца
+                    </p>
+                    <ul class="team-gallery__social-list">
+                      <li class="team-gallery__item">
+                        <svg class="team-gallery__icon icon icon--facebook" width="5" height="12">
+                          <use xlink:href="img/icons/sprite.svg#facebook-icon"></use>
+                        </svg>
+                      </li>
+                      <li class="team-gallery__item">
+                        <svg class="team-gallery__icon icon icon--twitter" width="16" height="12">
+                          <use xlink:href="img/icons/sprite.svg#twitter-icon"></use>
+                        </svg>
+                      </li>
+                      <li class="team-gallery__item icon icon--vk">
+                        <svg class="team-gallery__icon" width="18" height="10">
+                          <use xlink:href="img/icons/sprite.svg#vk-icon"></use>
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="team-gallery__member">
+                  <picture class="team-gallery__photo">
+                    <source type="image/webp" media="(min-width: 1366px)" srcset="img/photo-3-desktop@1x.webp 1x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.webp 1x">
+                    <source type="image/webp" srcset="img/photo-3-mobile@1x.webp 1x">
+                    <source media="(min-width: 1366px)" srcset="img/photo-3-desktop@1x.jpg 1x">
+                    <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x">
+                    <img class="team-gallery__image" src="img/photo-3-mobile@1x.jpg"  alt="Фото">
+                  </picture>
+                  <div class="team-gallery__info">
+                    <span class="team-gallery__name">Вадим Макеев</span>
+                    <span class="team-gallery__position">Руководитель отдела по работе с животными</span>
+                    <p class="team-gallery__blockquote">
+                      В нашем питомнике соблюдаются все меры по сохранению здоровья приобретаемых вами Мейн-Кунов.
+                      Ко всем Мейн-Кунам проявлялась забота, они приучены к лотку и имеют ветеринарные паспорта.
+                    </p>
+                    <ul class="team-gallery__social-list">
+                      <li class="team-gallery__item">
+                        <svg class="team-gallery__icon icon icon--facebook" width="5" height="12">
+                          <use xlink:href="img/icons/sprite.svg#facebook-icon"></use>
+                        </svg>
+                      </li>
+                      <li class="team-gallery__item">
+                        <svg class="team-gallery__icon icon icon--twitter" width="16" height="12">
+                          <use xlink:href="img/icons/sprite.svg#twitter-icon"></use>
+                        </svg>
+                      </li>
+                      <li class="team-gallery__item icon icon--vk">
+                        <svg class="team-gallery__icon" width="18" height="10">
+                          <use xlink:href="img/icons/sprite.svg#vk-icon"></use>
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
               <div class="team-gallery__sliders">
                 <button class="team-gallery__slider team-gallery__slider--left slider">
                   <svg class="team-gallery__arrow arrow" width="22" height="45">
