@@ -1,3 +1,4 @@
+import {showElement} from './utils.js';
 const gallery = document.querySelector('.pets-gallery');
 const galleryButtons = gallery.querySelectorAll('.pets-gallery__button');
 const galleryBlocks = gallery.querySelectorAll('.pets-gallery__block');
@@ -28,12 +29,6 @@ galleryButtons.forEach((button) => {
   })
 });
 
-//показ фотографии
-const movePhoto = (currentIndex, photos) => {
-  photos.forEach((photo) => photo.classList.remove('pets-gallery__photo--show'))
-  photos[currentIndex].classList.add('pets-gallery__photo--show');
-}
-
 //определение текущей вкладки с фотографиями
 const getPhotos = () => {
   let photos;
@@ -57,7 +52,7 @@ rightSlider.addEventListener("click", () => {
     currentIndex = 0;
   }
 
-  movePhoto(currentIndex, getPhotos())
+  showElement(currentIndex, getPhotos(), 'pets-gallery__photo--show');
 });
 
 //переключение фотографий влево
@@ -67,5 +62,6 @@ leftSlider.addEventListener("click", () => {
   }
 
   currentIndex--;
-  movePhoto(currentIndex, getPhotos())
+  showElement(currentIndex, getPhotos(), 'pets-gallery__photo--show');
 });
+
