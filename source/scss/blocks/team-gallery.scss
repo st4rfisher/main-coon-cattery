@@ -1,8 +1,10 @@
 .team-gallery {
   align-self: center;
-
+  max-width: 450px;
+  
   @media (min-width: $tablet) {
     margin: 0 28px 0 0;
+    max-width: 800px;
   }
 
   @media (min-width: $desktop) {
@@ -74,6 +76,7 @@
 .team-gallery__image {
   width: 126px;
   height: 126px;
+  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.5);
 
   @media (min-width: $tablet) {
     width: 210px;
@@ -98,7 +101,8 @@
     align-items: flex-start;
     border: 25px solid $shadow-black;
     margin: 0;
-    max-width: 649px;
+    min-width: 649px;
+    box-sizing: border-box;
     padding: 68px 95px 72px 106px;
     outline: 1px solid rgba(145, 131, 115, 0.4);
     row-gap: 7px;
