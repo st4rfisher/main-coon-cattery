@@ -46,6 +46,8 @@
   margin: 36px 0 0 0;
   padding: 0;
   row-gap: 30px;
+  width: -webkit-fill-available;
+  max-width: 554px;
 
   @media (min-width: $tablet) {
     margin: 54px 0 0 105px;
@@ -53,7 +55,7 @@
   }
 
   @media (min-width: $desktop) {
-    width: 793px;
+    max-width: 793px;
     margin: 54px 0 0 136px;
     row-gap: 38px;
   }
@@ -64,6 +66,7 @@
 
   &--first::before {
     position: absolute;
+    display: none;
     top: 18px;
     left: -79px;
     content: "";
@@ -72,6 +75,10 @@
     background-image: url("../img/icons/01-icon.svg");
     background-repeat: no-repeat;
     background-size: 100%;
+
+    @media (min-width: $tablet) {
+      display: block;
+    }
 
     @media (min-width: $desktop) {
       top: 29px;
@@ -83,6 +90,7 @@
 
   &--second::before {
     position: absolute;
+    display: none;
     top: 19px;
     left: -79px;
     content: "";
@@ -91,6 +99,10 @@
     background-image: url("../img/icons/02-icon.svg");
     background-repeat: no-repeat;
     background-size: 100%;
+
+    @media (min-width: $tablet) {
+      display: block;
+    }
 
     @media (min-width: $desktop) {
       top: 29px;
@@ -102,6 +114,7 @@
 
   &--third::before {
     position: absolute;
+    display: none;
     top: 20px;
     left: -79px;
     content: "";
@@ -110,6 +123,10 @@
     background-image: url("../img/icons/03-icon.svg");
     background-repeat: no-repeat;
     background-size: 100%;
+
+    @media (min-width: $tablet) {
+      display: block;
+    }
 
     @media (min-width: $desktop) {
       top: 30px;
@@ -121,6 +138,7 @@
 
   &--fourth::before {
     position: absolute;
+    display: none;
     top: 19px;
     left: -80px;
     content: "";
@@ -129,6 +147,10 @@
     background-image: url("../img/icons/04-icon.svg");
     background-repeat: no-repeat;
     background-size: 100%;
+
+    @media (min-width: $tablet) {
+      display: block;
+    }
 
     @media (min-width: $desktop) {
       top: 28px;
