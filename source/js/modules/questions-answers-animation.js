@@ -5,7 +5,8 @@ const icons = list.querySelectorAll('.questions-answers__icon');
 const unfurlIcon = '<use xlink:href="img/icons/sprite.svg#unfurl-icon"></use>';
 const curtailIcon = '<use xlink:href="img/icons/sprite.svg#curtail-icon"></use>';
 
-const buttonsArray = Array.prototype.slice.call(buttons); //преобразуем псевдо-массив Node-узлов в массив элементов
+//преобразуем псевдо-массив Node-узлов в массив элементов
+const buttonsArray = Array.prototype.slice.call(buttons);
 
 const action = (icon, answer, button) => {
   if (button.classList.contains('questions-answers__button--active')) {
@@ -22,6 +23,8 @@ const action = (icon, answer, button) => {
     answer.classList.toggle('questions-answers__answer--show');
   }
 }
+
+document.addEventListener('DOMContentLoaded', action(icons[0], answerBlocks[0], buttons[0]))
 
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
