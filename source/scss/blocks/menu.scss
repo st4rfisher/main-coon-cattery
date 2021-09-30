@@ -4,8 +4,10 @@
   background-color: $gold;
   width: 100%;
   z-index: 2;
+  box-shadow: 0px -10px 15px 0px rgba(34, 60, 80, 0.2) inset;
 
   @media (min-width: $desktop) {
+    box-shadow: none;
     position: static;
     width: auto;
     background-color: transparent;
@@ -16,9 +18,9 @@
     flex-direction: column;
   }
 
-  // &--no-js {
-  //   position: static;
-  // }
+  &--no-js {
+    position: static;
+  }
 }
 
 .menu__list {
@@ -33,6 +35,8 @@
   @media (min-width: $desktop) {
     max-width: 527px;
     flex-direction: row;
+    row-gap: 20px;
+    column-gap: 30px;
   }
 }
 
@@ -52,12 +56,13 @@
     @media (min-width: $desktop) {
       border: none;
       background-color: transparent;
+
     }
   }
 
   @media (min-width: $desktop) {
     border: none;
-    padding: 0 15px;
+    padding: 0;
   }
 }
 
