@@ -54,9 +54,9 @@
 </symbol><symbol id="arrow-right-tablet-icon" viewBox="0 0 60 18">
 <path d="M0 9L59 9M59 9L45.5143 17M59 9L45.5143 1" stroke="#A07B50" stroke-opacity="0.5" stroke-width="0.5"/>
 </symbol><symbol id="burger-menu-icon" viewBox="0 0 35 18">
-<path d="M0 1H35" stroke="#E5E5E5" stroke-width="0.5"/>
-<path d="M0 9H35" stroke="#E5E5E5" stroke-width="0.5"/>
-<path d="M0 17H35" stroke="#E5E5E5" stroke-width="0.5"/>
+<path d="M0 1H35" stroke-width="0.5"/>
+<path d="M0 9H35" stroke-width="0.5"/>
+<path d="M0 17H35" stroke-width="0.5"/>
 </symbol><symbol id="close-icon" viewBox="0 0 32 32">
 <title/>
 <g>

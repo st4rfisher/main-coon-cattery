@@ -55,9 +55,12 @@
   transition: .3s;
 
   &:hover {
-    color: $gold;
-    transform: scale(1.1);
-    transition: .3s;
+    @media (min-width: $desktop) {
+      color: $gold;
+      transform: scale(1.1);
+      transition: .3s;
+    }
+
   }
 
   &:active {
@@ -69,6 +72,10 @@
   fill: $white;
   cursor: pointer;
   transition: .3s;
+
+  &:hover {
+    transform: scale(1.5);
+  }
 
   &--vk:hover {
     fill: $vk-color;

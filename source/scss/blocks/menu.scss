@@ -1,47 +1,97 @@
 .menu {
+  position: absolute;
   display: none;
+  background-color: $gold;
+  width: 100%;
+  z-index: 2;
+  box-shadow: 0px -10px 15px 0px rgba(34, 60, 80, 0.2) inset;
 
   @media (min-width: $desktop) {
+    box-shadow: none;
+    position: static;
+    width: auto;
+    background-color: transparent;
+  }
+
+  &--show {
     display: flex;
+    flex-direction: column;
+  }
+
+  &--no-js {
+    position: static;
   }
 }
-
 
 .menu__list {
   @include button-text;
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $desktop) {
+    max-width: 527px;
+    flex-direction: row;
+    row-gap: 20px;
+    column-gap: 30px;
+  }
 }
 
 .menu__item {
+  padding: 15px;
+  border-top: 1px solid $beige;
+  border-bottom: 1px solid $brown;
+  border-left: 1px solid $brown;
+  border-right: 1px solid $brown;
+  text-align: center;
+  transition: .3s;
+
   &:hover {
-    transform: scale(1.1);
-    transition: .3s;
+    cursor: pointer;
+    background-color: darken($gold, 10%);
+
+    @media (min-width: $desktop) {
+      border: none;
+      background-color: transparent;
+
+    }
+  }
+
+  @media (min-width: $desktop) {
+    border: none;
+    padding: 0;
   }
 }
 
 .menu__item-link {
   text-decoration: none;
   color: $white;
-  padding: 0px 20px;
+
+  @media (min-width: $desktop) {
+    padding: 0;
+  }
 }
 
 
 .menu__close-button {
   display: block;
   position: absolute;
+  top: 0;
+  right: 0;
   background: none;
   border: none;
   padding: 0;
   stroke: $white;
   cursor: pointer;
+  padding: 9px;
+  align-self: flex-end;
+  transition: .3s;
 
   &:hover {
-    stroke: $gold;
-    transform: scale(1.5);
-    transition: .3s;
+    transform: scale(1.3);
   }
 
   @media (min-width: $desktop) {
