@@ -1,7 +1,7 @@
 .team-gallery {
   align-self: center;
   max-width: 450px;
-  
+
   @media (min-width: $tablet) {
     margin: 0 28px 0 0;
     max-width: 800px;
@@ -11,6 +11,7 @@
     margin: 0;
     align-self: flex-end;
     width: 100%;
+    max-width: 100%;
   }
 }
 
