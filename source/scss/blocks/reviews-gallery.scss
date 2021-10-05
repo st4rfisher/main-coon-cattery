@@ -66,6 +66,7 @@
   width: 228px;
   height: 183px;
   object-fit: cover;
+  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.5);
 
   @media (min-width: $tablet) {
     width: 303px;
@@ -210,8 +211,6 @@
 .reviews-gallery__icon {
   border: 1px solid $gold;
   fill: $gold;
-  cursor: pointer;
-  transition: .3s;
 
   &:hover {
     transform: scale(1.3);
