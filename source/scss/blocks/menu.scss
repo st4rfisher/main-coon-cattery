@@ -6,6 +6,7 @@
   z-index: 2;
 
   @media (min-width: $desktop) {
+    display: block;
     box-shadow: none;
     position: static;
     width: auto;
@@ -100,5 +101,9 @@
 
   &--show {
     display: block;
+
+    @media (min-width: $desktop) {
+      display: none
+    }
   }
 }
