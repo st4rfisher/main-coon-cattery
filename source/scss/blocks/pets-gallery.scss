@@ -1,7 +1,7 @@
 .pets-gallery {
   width: 100%;
   max-width: 600px;
-  
+
   @media (min-width: $tablet) {
     max-width: 900px;
   }
@@ -127,10 +127,6 @@
 
   @media (min-width: $desktop) {
     object-fit: cover;
-<<<<<<< HEAD
-    box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.5);
-=======
->>>>>>> efdaaaf4047f4d0398fb3a88515f5553d6424dbf
     height: 100%;
     width: 100%;
   }
