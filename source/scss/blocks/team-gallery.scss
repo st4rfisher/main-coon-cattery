@@ -1,9 +1,12 @@
 .team-gallery {
+  align-self: center;
+
   @media (min-width: $tablet) {
-    align-self: flex-start;
+    margin: 0 28px 0 0;
   }
 
   @media (min-width: $desktop) {
+    margin: 0;
     align-self: flex-end;
     width: 100%;
   }
@@ -24,13 +27,28 @@
   }
 }
 
+.team-gallery__members-block {
+  margin: 0;
+  padding: 0;
+}
+
+.team-gallery__member {
+  display: none;
+
+  &--show {
+    display: block;
+  }
+}
+
 .team-gallery__photo {
   position: absolute;
   top: -63px;
   left: 50%;
   transform: translateX(-50%);
+  width: 126px;
 
   @media (min-width: $tablet) {
+    width: auto;
     top: 297px;
     right: -151px;
     left: auto;
@@ -43,7 +61,11 @@
   }
 }
 
-.team-gallery__photo-info {
+.team-gallery__image {
+  width: 100%;
+}
+
+.team-gallery__info {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,6 +105,7 @@
 
 .team-gallery__position {
   color: $gold;
+  text-align: center;
 
   @media (min-width: $tablet) {
     @include paragraph;
@@ -95,7 +118,7 @@
   opacity: 0.72;
   text-align: center;
   color: $white;
-  margin: 20px 10px;
+  margin: 21px 10px;
 
   @media (min-width: $tablet) {
     @include section-paragraph;

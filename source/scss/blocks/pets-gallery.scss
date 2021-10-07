@@ -1,7 +1,7 @@
 .pets-gallery {
   width: 100%;
   max-width: 600px;
-
+  
   @media (min-width: $tablet) {
     max-width: 900px;
   }
@@ -54,12 +54,13 @@
   padding: 0px 28px;
 
   @media (min-width: $tablet) {
-    margin: 29px auto 51px auto;
+    margin: 25px auto 51px auto;
     max-width: 723px;
     padding: 0;
   }
 
   @media (min-width: $desktop) {
+    margin: 25px auto 55px auto;
     max-width: 979px;
   }
 }
@@ -125,9 +126,11 @@
   }
 
   @media (min-width: $desktop) {
-    align-self: flex-start;
     object-fit: cover;
+<<<<<<< HEAD
     box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.5);
+=======
+>>>>>>> efdaaaf4047f4d0398fb3a88515f5553d6424dbf
     height: 100%;
     width: 100%;
   }
