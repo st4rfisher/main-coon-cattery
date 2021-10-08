@@ -6,12 +6,12 @@
 @import "global/fonts.scss";
 @import "global/keyframes.scss";
 
-
 //common styles
 @import "blocks/header.scss";
 @import "blocks/menu.scss";
 @import "blocks/main.scss";
 
+//blocks
 @import "blocks/page.scss";
 @import "blocks/pets.scss";
 @import "blocks/features.scss";
@@ -24,5 +24,3 @@
 @import "blocks/reviews.scss";
 @import "blocks/reviews-gallery.scss";
 @import "blocks/footer.scss";
-
-

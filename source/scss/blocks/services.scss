@@ -20,7 +20,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin: 23px 0 21px 0px;
+    margin: 23px 0 21px 0;
   }
 }
 
@@ -87,7 +87,7 @@
 
     &--colored,
     &:nth-child(2) {
-      padding: 47px 0 0 0
+      padding: 47px 0 0 0;
     }
 
     &:nth-child(3) {
@@ -101,7 +101,7 @@
     &--colored,
     &:nth-child(2),
     &:nth-child(3) {
-      padding: 53px 0 0 0
+      padding: 53px 0 0 0;
     }
   }
 }
@@ -111,7 +111,7 @@
   background-color: $gold;
 }
 
- .services__icon {
+.services__icon {
   width: 100%;
   fill: $gold;
 
@@ -144,7 +144,6 @@
 .services__item-description {
   @include section-paragraph-mobile;
   text-align: center;
-  margin: 13px;
   color: $white;
   margin: 12px 35px 10px 35px;
 

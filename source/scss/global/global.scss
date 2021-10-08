@@ -13,7 +13,7 @@
 
 .logo {
   fill: $gold;
-  transition: .3s;
+  transition: 0.3s;
 
   &:hover {
     fill: $white;
@@ -29,7 +29,7 @@
   &:hover {
     border: 1px solid darken($gold, 10%);
     background-color: darken($gold, 10%);
-    transition: .3s;
+    transition: 0.3s;
     transform: scale(1.1);
   }
 
@@ -52,15 +52,14 @@
 .item {
   color: $white;
   text-decoration: none;
-  transition: .3s;
+  transition: 0.3s;
 
   &:hover {
     @media (min-width: $desktop) {
       color: $gold;
       transform: scale(1.1);
-      transition: .3s;
+      transition: 0.3s;
     }
-
   }
 
   &:active {
@@ -71,7 +70,7 @@
 .icon {
   fill: $white;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 
   &:hover {
     transform: scale(1.5);
@@ -83,7 +82,7 @@
   }
 
   &--vk:active {
-    fill: darken($vk-color, 20%)
+    fill: darken($vk-color, 20%);
   }
 
   &--twitter:hover {
@@ -92,7 +91,7 @@
   }
 
   &--twitter:active {
-    fill: darken($twitter-color, 20%)
+    fill: darken($twitter-color, 20%);
   }
 
   &--facebook:hover {
@@ -101,13 +100,13 @@
   }
 
   &--facebook:active {
-    fill: darken($facebook-color, 15%)
+    fill: darken($facebook-color, 15%);
   }
 }
 
-.arrow  {
+.arrow {
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 
   .slider:hover & {
     transform: scale(1.5);

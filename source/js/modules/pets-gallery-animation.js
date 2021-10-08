@@ -64,4 +64,3 @@ leftSlider.addEventListener("click", () => {
   currentIndex--;
   showElement(currentIndex, getPhotos(), 'pets-gallery__photo--show');
 });
-

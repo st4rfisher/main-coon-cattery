@@ -76,7 +76,7 @@
   left: 41px;
   padding: 0;
   stroke: $white;
-  transition: .3s;
+  transition: 0.3s;
 
   &:hover {
     cursor: pointer;
@@ -116,7 +116,7 @@
 
   @media (min-width: $tablet) {
     padding: 0;
-    margin: 95px 0 0px 42px;
+    margin: 95px 0 0 42px;
     align-items: flex-start;
     max-width: 350px;
   }

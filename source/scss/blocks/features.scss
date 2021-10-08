@@ -69,13 +69,13 @@
 }
 
 .features__item {
-  position: relative;
   @include paragraph-mobile;
+  position: relative;
   margin: 20px 0 0 0;
 
-  &:before {
+  &::before {
     position: absolute;
-    content: '';
+    content: "";
     top: 5px;
     left: -18px;
     width: 8px;

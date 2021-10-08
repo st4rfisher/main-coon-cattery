@@ -31,7 +31,6 @@ exports.default = gulp.series(
     exports.watcher
   ));
 
-
 exports.build = gulp.series(
   exports.clean,
   exports.copy,
@@ -44,4 +43,3 @@ exports.build = gulp.series(
     exports.createWebp
   ),
 );
-

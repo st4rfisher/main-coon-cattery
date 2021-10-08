@@ -39,7 +39,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin: 28px 45px 50px 45px
+    margin: 28px 45px 50px 45px;
   }
 }
 
@@ -157,7 +157,7 @@
   justify-content: center;
   min-width: 46px;
   background-color: $gold;
-  transition: .3s;
+  transition: 0.3s;
 
   @media (min-width: $tablet) {
     min-width: 58px;
@@ -168,9 +168,9 @@
   width: 18px;
   height: 45px;
   stroke: $white;
-  stroke-width:5;
+  stroke-width: 5;
 
   .pets-care__link-button:hover & {
-    animation: bounce-right .3s alternate ease infinite;
+    animation: bounce-right 0.3s alternate ease infinite;
   }
 }

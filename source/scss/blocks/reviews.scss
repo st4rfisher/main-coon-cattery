@@ -16,7 +16,7 @@
 
 .reviews__title {
   @include section-title-mobile;
-  margin: 19px 0 10px 0px;
+  margin: 19px 0 10px 0;
 
   @media (min-width: $tablet) {
     @include section-title;

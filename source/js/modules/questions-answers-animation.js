@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', action(icons[0], answerBlocks[0], 
 
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
-   const index = buttonsArray.indexOf(button);
-   action(icons[index], answerBlocks[index], button)
+    const index = buttonsArray.indexOf(button);
+    action(icons[index], answerBlocks[index], button)
   })
 });
