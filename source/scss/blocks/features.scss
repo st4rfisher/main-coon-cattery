@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $asphalt;
+  background-color: $color4;
   padding: 30px 15px 54px 15px;
 
   @media (min-width: $tablet) {
@@ -25,7 +25,7 @@
 
 .features__description {
   @include paragraph-mobile;
-  color: $gold;
+  color: $color6;
   text-align: center;
   margin: 0 8px 25px 8px;
 
@@ -52,7 +52,7 @@
 
 .features__list {
   list-style: none;
-  color: $white;
+  color: $color1;
   padding: 0 16px 0 18px;
   margin: 11px 0 0 0;
 
@@ -80,7 +80,7 @@
     left: -18px;
     width: 8px;
     height: 8px;
-    background-color: $gold;
+    background-color: $color6;
     border-radius: 50%;
 
     @media (min-width: $tablet) {
@@ -125,30 +125,30 @@
   }
 
   @media (min-width: $desktop) {
-    position: relative;
+    //position: relative;
     max-width: 737px;
 
     &--first {
-      top: -518px;
-      left: -166px;
+      top: -517px;
+      left: -148px;
       max-width: 240px;
     }
 
     &--second {
-      top: -450px;
-      right: -709px;
+      top: -409px;
+      right: -146px;
       max-width: 190px;
     }
 
     &--third {
-      top: -278px;
-      right: -672px;
+      top: -189px;
+      right: -89px;
       max-width: 170px;
     }
 
     &--fourth {
-      top: -370px;
-      left: -132px;
+      top: -232px;
+      left: -114px;
       max-width: 190px;
     }
   }

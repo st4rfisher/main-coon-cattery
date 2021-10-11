@@ -59,7 +59,7 @@
   font-size: 28px;
   line-height: 32px;
   word-break: break-word;
-  color: $white;
+  color: $color1;
   text-align: center;
 }
 
@@ -70,7 +70,7 @@
   font-size: 36px;
   line-height: 42px;
   word-break: break-word;
-  color: $white;
+  color: $color1;
 }
 
 @mixin section-paragraph-mobile {
@@ -99,7 +99,7 @@
   line-height: 19px;
   word-break: break-word;
   text-decoration: none;
-  color: $white;
+  color: $color1;
 }
 
 @mixin text-mobile {
@@ -132,8 +132,8 @@
 @mixin button-link {
   @include link-text-mobile;
   padding: 11px 20px 13px 20px;
-  border: 1px solid $gold;
-  color: $white;
+  border: 1px solid $color6;
+  color: $color1;
   text-decoration: none;
   transition: 0.3s;
 

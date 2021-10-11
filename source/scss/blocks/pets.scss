@@ -17,7 +17,7 @@
 
 .pets__description {
   @include paragraph-mobile;
-  color: $gold;
+  color: $color6;
   text-align: center;
 
   @media (min-width: $tablet) {

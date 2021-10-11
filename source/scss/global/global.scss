@@ -12,11 +12,11 @@
 }
 
 .logo {
-  fill: $gold;
+  fill: $color6;
   transition: 0.3s;
 
   &:hover {
-    fill: $white;
+    fill: $color1;
     transform: scale(1.3);
   }
 
@@ -27,8 +27,8 @@
 
 .link {
   &:hover {
-    border: 1px solid darken($gold, 10%);
-    background-color: darken($gold, 10%);
+    border: 1px solid darken($color6, 10%);
+    background-color: darken($color6, 10%);
     transition: 0.3s;
     transform: scale(1.1);
   }
@@ -41,7 +41,7 @@
 .button {
   &:hover {
     cursor: pointer;
-    background: darken($gold, 10%);
+    background: darken($color6, 10%);
   }
 
   &:active {
@@ -50,13 +50,13 @@
 }
 
 .item {
-  color: $white;
+  color: $color1;
   text-decoration: none;
   transition: 0.3s;
 
   &:hover {
     @media (min-width: $desktop) {
-      color: $gold;
+      color: $color6;
       transform: scale(1.1);
       transition: 0.3s;
     }
@@ -68,7 +68,7 @@
 }
 
 .icon {
-  fill: $white;
+  fill: $color1;
   cursor: pointer;
   transition: 0.3s;
 

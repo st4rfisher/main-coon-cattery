@@ -1,11 +1,11 @@
 .header {
-  background-color: $smoky-white;
+  background-color: $color9;
 }
 
 .header__container {
   box-sizing: border-box;
   background-image: url("../img/cat-1-mobile@1x.png");
-  background-color: $black;
+  background-color: $color2;
   background-repeat: no-repeat;
   background-position: 100% 100%;
   max-width: $desktop;
@@ -17,7 +17,7 @@
 
   @media (min-width: $tablet) {
     background-image: url("../img/cat-1-tablet@1x.png");
-    padding: 31px 45px 42px 41px;
+    padding: 0 0 44px 0;
 
     @media (min-resolution: 1.5dppx) {
       background-image: url("../img/cat-1-tablet@2x.png");
@@ -75,12 +75,12 @@
   top: 6px;
   left: 41px;
   padding: 0;
-  stroke: $white;
+  stroke: $color1;
   transition: 0.3s;
 
   &:hover {
     cursor: pointer;
-    stroke: $gold;
+    stroke: $color6;
     transform: scale(1.2);
   }
 
@@ -129,7 +129,7 @@
 
 .header__city {
   @include paragraph-mobile;
-  color: $gold;
+  color: $color6;
   text-align: center;
   margin: 0;
 
@@ -140,7 +140,7 @@
 
 .header__title {
   @include title-mobile;
-  color: $white;
+  color: $color1;
   text-align: center;
   margin: 4px 0 0 0;
 
@@ -153,7 +153,7 @@
 
 .header__description {
   @include paragraph-mobile;
-  color: $gold;
+  color: $color6;
   text-align: center;
   margin: 17px 20px 35px 20px;
 

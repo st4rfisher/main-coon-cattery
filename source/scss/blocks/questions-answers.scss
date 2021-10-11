@@ -2,11 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $asphalt;
+  background-color: $color4;
   padding: 30px 15px 20px 15px;
 
   @media (min-width: $tablet) {
-    padding: 103px 55px 35px 55px;
+    padding: 103px 55px 38px;
   }
 
   @media (min-width: $desktop) {
@@ -29,7 +29,7 @@
 
 .questions-answers__description {
   @include section-paragraph-mobile;
-  color: $gold;
+  color: $color6;
   text-align: center;
   margin: 0 32px;
 
@@ -42,7 +42,7 @@
   display: flex;
   flex-direction: column;
   list-style: none;
-  color: $white;
+  color: $color1;
   margin: 36px 0 0 0;
   padding: 0;
   row-gap: 30px;
@@ -171,7 +171,7 @@
   align-items: center;
   flex-grow: 1;
   font-style: 500;
-  border: 1px solid $brown;
+  border: 1px solid $color7;
   margin: 0;
   padding: 9px 14px 10px 13px;
   letter-spacing: 0.01em;
@@ -189,14 +189,14 @@
 
 .questions-answers__answer {
   display: none;
-  border-left: 1px solid $brown;
-  border-bottom: 1px solid $brown;
-  border-right: 1px solid $brown;
+  border-left: 1px solid $color7;
+  border-bottom: 1px solid $color7;
+  border-right: 1px solid $color7;
   padding: 9px 14px 5px 13px;
   box-sizing: border-box;
 
   @media (min-width: $tablet) {
-    padding: 24px 140px 4px 28px;
+    padding: 21px 140px 4px 28px;
   }
 
   @media (min-width: $desktop) {
@@ -224,7 +224,7 @@
 }
 
 .questions-answers__button {
-  border: 1px solid $gold;
+  border: 1px solid $color6;
   background: none;
   padding: 10px 12px 5px 13px;
   transition: 0.3s;
@@ -238,20 +238,20 @@
   }
 
   &--active {
-    background-color: $gold;
+    background-color: $color6;
   }
 }
 
 .questions-answers__icon {
-  stroke: $gold;
+  stroke: $color6;
 
   &--curtail {
-    stroke: $white;
+    stroke: $color1;
   }
 }
 
 .questions-answers__icon--unfurl {
   .questions-answers__button:hover & {
-    stroke: $white;
+    stroke: $color1;
   }
 }

@@ -1,7 +1,7 @@
 .menu {
   position: absolute;
   display: none;
-  background-color: $gold;
+  background-color: $color6;
   width: 100%;
   z-index: 2;
 
@@ -43,16 +43,16 @@
 
 .menu__item {
   padding: 15px;
-  border-top: 1px solid $beige;
-  border-bottom: 1px solid $brown;
-  border-left: 1px solid $brown;
-  border-right: 1px solid $brown;
+  border-top: 1px solid $color8;
+  border-bottom: 1px solid $color7;
+  border-left: 1px solid $color7;
+  border-right: 1px solid $color7;
   text-align: center;
   transition: 0.3s;
 
   &:hover {
     cursor: pointer;
-    background-color: darken($gold, 10%);
+    background-color: darken($color6, 10%);
 
     @media (min-width: $desktop) {
       border: none;
@@ -68,7 +68,7 @@
 
 .menu__item-link {
   text-decoration: none;
-  color: $white;
+  color: $color1;
 
   @media (min-width: $desktop) {
     padding: 0;
@@ -83,7 +83,7 @@
   right: 0;
   background: none;
   border: none;
-  stroke: $white;
+  stroke: $color1;
   cursor: pointer;
   padding: 9px;
   align-self: flex-end;

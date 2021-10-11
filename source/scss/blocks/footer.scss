@@ -1,5 +1,5 @@
 .footer {
-  background-color: $smoky-white;
+  background-color: $color9;
 }
 
 .footer__container {
@@ -9,7 +9,7 @@
   box-sizing: border-box;
   padding: 35px 28px 33px 28px;
   row-gap: 15px;
-  background-color: $black;
+  background-color: $color2;
   max-width: 1366px;
   margin: 0 auto;
 
@@ -27,7 +27,7 @@
 
 .footer__address {
   @include paragraph-mobile;
-  color: $white;
+  color: $color1;
   margin: 0;
 
   @media (min-width: $tablet) {
@@ -43,7 +43,7 @@
 .footer__phone {
   @include paragraph-mobile;
   text-decoration: none;
-  color: $white;
+  color: $color1;
 
   @media (min-width: $tablet) {
     order: 3;

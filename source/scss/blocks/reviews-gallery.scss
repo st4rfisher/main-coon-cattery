@@ -86,7 +86,7 @@
   align-items: center;
   box-sizing: border-box;
   padding: 113px 0 34px;
-  background-color: $shadow-black;
+  background-color: $color2;
   column-gap: 36px;
   max-width: 450px;
 
@@ -109,7 +109,7 @@
 .reviews-gallery__name {
   @include text-mobile;
   font-weight: 500;
-  color: $gold;
+  color: $color6;
 
   @media (min-width: $tablet) {
     @include gallery-text;
@@ -126,7 +126,7 @@
   @include section-paragraph-mobile;
   opacity: 0.72;
   text-align: center;
-  color: $white;
+  color: $color1;
   margin: 15px 25px 18px 25px;
 
   @media (min-width: $tablet) {
@@ -175,7 +175,7 @@
   border: none;
   outline: none;
   padding: 0;
-  stroke: $gold;
+  stroke: $color6;
   background-repeat: no-repeat;
   background-size: 100%;
   cursor: pointer;
@@ -209,12 +209,12 @@
 }
 
 .reviews-gallery__icon {
-  border: 1px solid $gold;
-  fill: $gold;
+  border: 1px solid $color6;
+  fill: $color6;
 
   &:hover {
     transform: scale(1.3);
-    border: 1px solid $white;
+    border: 1px solid $color1;
   }
 }
 
@@ -222,7 +222,7 @@
   @include link-text-mobile;
   align-self: center;
   line-height: 17px;
-  color: $gold;
+  color: $color6;
   text-align: center;
   order: 1;
 }
